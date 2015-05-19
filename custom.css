@@ -3,7 +3,10 @@ center {
     margin-right: auto;
 }
 
-.inner-cell img {
+.inner-cell img,
+.inner-cell p img,
+.reveal section img
+{
     margin-left: auto;
     margin-right: auto;
 
