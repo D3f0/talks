@@ -9,7 +9,7 @@
 <meta name="apple-mobile-web-app-capable" content="yes" />
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 
-<title>EnseñandoConUnPaperInteractivo slides</title>
+<title>EnseñandoConUnPaperInteractivo slides</title>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
@@ -228,19 +228,6 @@ div.output_prompt {
 </div>
 </div>
 </div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[20]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="o">!</span>convert images/qrcode.png -resize 10% images/qrcode.png
-</pre></div>
-
-</div>
-</div>
-</div>
-
 </div></section>
     </section><section>
     <section>
@@ -471,6 +458,55 @@ div.output_prompt {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Enlace-a-p&#225;ginas-externas">Enlace a p&#225;ginas externas<a class="anchor-link" href="#Enlace-a-p&#225;ginas-externas">&#182;</a></h1>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[31]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">IFrame</span>
+<span class="n">IFrame</span><span class="p">(</span><span class="s">&#39;http://conf.scipyla.org/&#39;</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="s">&#39;100%&#39;</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="s">&#39;300px&#39;</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt output_prompt">Out[31]:</div>
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+
+        <iframe
+            width="100%"
+            height="300px"
+            src="http://conf.scipyla.org/"
+            frameborder="0"
+            allowfullscreen
+        ></iframe>
+        
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div></section>
+    </section><section>
+    <section>
+    
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="Creando-archivos-y-llamando-comandos">Creando archivos y llamando comandos<a class="anchor-link" href="#Creando-archivos-y-llamando-comandos">&#182;</a></h1>
 </div>
 </div>
@@ -575,6 +611,268 @@ Linking ejemplos/programa
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Extensiones!">Extensiones!<a class="anchor-link" href="#Extensiones!">&#182;</a></h1>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[28]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span class="o">!</span>pip install ipython-sql
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt"></div>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Downloading/unpacking ipython-sql
+  Downloading ipython-sql-0.3.5.tar.gz
+  Storing download in cache at /Users/nahuel/.pip_download_cache/https%3A%2F%2Fpypi.python.org%2Fpackages%2Fsource%2Fi%2Fipython-sql%2Fipython-sql-0.3.5.tar.gz
+  Running setup.py (path:/private/var/folders/04/qbzcrh4n2kbbbv30d3pk_qn80000gn/T/pip_build_nahuel/ipython-sql/setup.py) egg_info for package ipython-sql
+    
+Downloading/unpacking prettytable (from ipython-sql)
+  Using download cache from /Users/nahuel/.pip_download_cache/https%3A%2F%2Fpypi.python.org%2Fpackages%2Fsource%2FP%2FPrettyTable%2Fprettytable-0.7.2.tar.bz2
+  Running setup.py (path:/private/var/folders/04/qbzcrh4n2kbbbv30d3pk_qn80000gn/T/pip_build_nahuel/prettytable/setup.py) egg_info for package prettytable
+    
+Requirement already satisfied (use --upgrade to upgrade): ipython&gt;=1.0 in /usr/local/lib/python2.7/site-packages (from ipython-sql)
+Downloading/unpacking sqlalchemy&gt;=0.6.7 (from ipython-sql)
+  Downloading SQLAlchemy-1.0.4.tar.gz (4.6MB): 4.6MB downloaded
+  Storing download in cache at /Users/nahuel/.pip_download_cache/https%3A%2F%2Fpypi.python.org%2Fpackages%2Fsource%2FS%2FSQLAlchemy%2FSQLAlchemy-1.0.4.tar.gz
+  Running setup.py (path:/private/var/folders/04/qbzcrh4n2kbbbv30d3pk_qn80000gn/T/pip_build_nahuel/sqlalchemy/setup.py) egg_info for package sqlalchemy
+    
+    warning: no files found matching &apos;*.jpg&apos; under directory &apos;doc&apos;
+    warning: no files found matching &apos;*.mako&apos; under directory &apos;doc&apos;
+    warning: no files found matching &apos;distribute_setup.py&apos;
+    warning: no files found matching &apos;sa2to3.py&apos;
+    warning: no files found matching &apos;ez_setup.py&apos;
+    no previously-included directories found matching &apos;doc/build/output&apos;
+Requirement already satisfied (use --upgrade to upgrade): sqlparse in /usr/local/lib/python2.7/site-packages (from ipython-sql)
+Requirement already satisfied (use --upgrade to upgrade): six in /usr/local/lib/python2.7/site-packages (from ipython-sql)
+Installing collected packages: ipython-sql, prettytable, sqlalchemy
+  Running setup.py install for ipython-sql
+    
+  Running setup.py install for prettytable
+    
+  Running setup.py install for sqlalchemy
+    building &apos;sqlalchemy.cprocessors&apos; extension
+    clang -fno-strict-aliasing -fno-common -dynamic -I/usr/local/include -I/usr/local/opt/sqlite/include -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -I/usr/local/Cellar/python/2.7.9/Frameworks/Python.framework/Versions/2.7/include/python2.7 -c lib/sqlalchemy/cextension/processors.c -o build/temp.macosx-10.10-x86_64-2.7/lib/sqlalchemy/cextension/processors.o
+    clang -bundle -undefined dynamic_lookup -L/usr/local/lib -L/usr/local/opt/sqlite/lib build/temp.macosx-10.10-x86_64-2.7/lib/sqlalchemy/cextension/processors.o -o build/lib.macosx-10.10-x86_64-2.7/sqlalchemy/cprocessors.so
+    building &apos;sqlalchemy.cresultproxy&apos; extension
+    clang -fno-strict-aliasing -fno-common -dynamic -I/usr/local/include -I/usr/local/opt/sqlite/include -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -I/usr/local/Cellar/python/2.7.9/Frameworks/Python.framework/Versions/2.7/include/python2.7 -c lib/sqlalchemy/cextension/resultproxy.c -o build/temp.macosx-10.10-x86_64-2.7/lib/sqlalchemy/cextension/resultproxy.o
+    clang -bundle -undefined dynamic_lookup -L/usr/local/lib -L/usr/local/opt/sqlite/lib build/temp.macosx-10.10-x86_64-2.7/lib/sqlalchemy/cextension/resultproxy.o -o build/lib.macosx-10.10-x86_64-2.7/sqlalchemy/cresultproxy.so
+    building &apos;sqlalchemy.cutils&apos; extension
+    clang -fno-strict-aliasing -fno-common -dynamic -I/usr/local/include -I/usr/local/opt/sqlite/include -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -I/usr/local/Cellar/python/2.7.9/Frameworks/Python.framework/Versions/2.7/include/python2.7 -c lib/sqlalchemy/cextension/utils.c -o build/temp.macosx-10.10-x86_64-2.7/lib/sqlalchemy/cextension/utils.o
+    clang -bundle -undefined dynamic_lookup -L/usr/local/lib -L/usr/local/opt/sqlite/lib build/temp.macosx-10.10-x86_64-2.7/lib/sqlalchemy/cextension/utils.o -o build/lib.macosx-10.10-x86_64-2.7/sqlalchemy/cutils.so
+    
+    warning: no files found matching &apos;*.jpg&apos; under directory &apos;doc&apos;
+    warning: no files found matching &apos;*.mako&apos; under directory &apos;doc&apos;
+    warning: no files found matching &apos;distribute_setup.py&apos;
+    warning: no files found matching &apos;sa2to3.py&apos;
+    warning: no files found matching &apos;ez_setup.py&apos;
+    no previously-included directories found matching &apos;doc/build/output&apos;
+Successfully installed ipython-sql prettytable sqlalchemy
+Cleaning up...
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div></section><section>
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[32]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span class="o">%</span><span class="k">load_ext</span> sql
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[46]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span class="o">%</span><span class="k">sql</span> postgresql://postgres@localhost/test
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt output_prompt">Out[46]:</div>
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>u&apos;Connected: postgres@test&apos;</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[48]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span class="o">%%</span><span class="k">sql</span>
+CREATE TABLE scipylas (year int, name varchar(30), location varchar(30));
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt"></div>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Done.
+</pre>
+</div>
+</div>
+
+<div class="output_area"><div class="prompt output_prompt">Out[48]:</div>
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>[]</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[50]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span class="o">%%</span><span class="k">sql</span>
+INSERT INTO scipylas VALUES (2013, &#39;SciPyAr 2013&#39;, &#39;Puerto Madryn, Argentina&#39;);
+INSERT INTO scipylas VALUES (2014, &#39;SciPyAr 2013&#39;, &#39;Bahía Blanca, Argentina&#39;);
+INSERT INTO scipylas VALUES (2015, &#39;SciPyLa 2015&#39;, &#39;Posadas, Argentina&#39;);
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt"></div>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>1 rows affected.
+1 rows affected.
+1 rows affected.
+</pre>
+</div>
+</div>
+
+<div class="output_area"><div class="prompt output_prompt">Out[50]:</div>
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>[]</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[51]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span class="o">%</span><span class="k">sql</span> select * from scipylas
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt"></div>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>3 rows affected.
+</pre>
+</div>
+</div>
+
+<div class="output_area"><div class="prompt output_prompt">Out[51]:</div>
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<table>
+    <tr>
+        <th>year</th>
+        <th>name</th>
+        <th>location</th>
+    </tr>
+    <tr>
+        <td>2013</td>
+        <td>SciPyAr 2013</td>
+        <td>Puerto Madryn, Argentina</td>
+    </tr>
+    <tr>
+        <td>2014</td>
+        <td>SciPyAr 2013</td>
+        <td>Bahía Blanca, Argentina</td>
+    </tr>
+    <tr>
+        <td>2015</td>
+        <td>SciPyLa 2015</td>
+        <td>Posadas, Argentina</td>
+    </tr>
+</table>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div></section>
+    </section><section>
+    <section>
+    
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="Como-generamos-las-filminas?">Como generamos las filminas?<a class="anchor-link" href="#Como-generamos-las-filminas?">&#182;</a></h1><p>Podemos descargar el Notebook en una variedad de formatos...
 <img src="images/export.png" height="300px"></p>
 <p>Pero para utlizar los slides, debemos usar la línea de comandos</p>
@@ -615,10 +913,10 @@ Neceistamos una copia de <strong>reveal.js</strong> junto a nuestro Archivo.slid
     
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[19]:</div>
+<div class="prompt input_prompt">In&nbsp;[64]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="o">!</span>ipython nbconvert --to slides EnseñandoConUnPaperInteractivo.ipynb
+<div class=" highlight hl-ipython2"><pre><span class="o">!</span>ipython nbconvert --to slides EnseñandoConUnPaperInteractivo.slides.html
 <span class="o">!</span>git add -u
 <span class="o">!</span>git commit -m <span class="s2">&quot;Updates </span><span class="k">$(</span>date<span class="k">)</span><span class="s2">&quot;</span>
 <span class="o">!</span>git push origin master
@@ -635,17 +933,55 @@ Neceistamos una copia de <strong>reveal.js</strong> junto a nuestro Archivo.slid
 
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>[NbConvertApp] Converting notebook EnseñandoConUnPaperInteractivo.ipynb to slides
-[NbConvertApp] Writing 1104674 bytes to EnseñandoConUnPaperInteractivo.slides.html
-[master f88ad0f] Updates Tue May 19 15:08:59 ART 2015
- 2 files changed, 8 insertions(+), 48 deletions(-)
-Counting objects: 147, done.
+<pre>[NbConvertApp] Converting notebook EnseñandoConUnPaperInteractivo.slides.html to slides
+Traceback (most recent call last):
+  File &quot;/usr/local/bin/ipython&quot;, line 11, in &lt;module&gt;
+    sys.exit(start_ipython())
+  File &quot;/usr/local/lib/python2.7/site-packages/IPython/__init__.py&quot;, line 120, in start_ipython
+    return launch_new_instance(argv=argv, **kwargs)
+  File &quot;/usr/local/lib/python2.7/site-packages/IPython/config/application.py&quot;, line 574, in launch_instance
+    app.start()
+  File &quot;/usr/local/lib/python2.7/site-packages/IPython/terminal/ipapp.py&quot;, line 367, in start
+    return self.subapp.start()
+  File &quot;/usr/local/lib/python2.7/site-packages/IPython/nbconvert/nbconvertapp.py&quot;, line 278, in start
+    self.convert_notebooks()
+  File &quot;/usr/local/lib/python2.7/site-packages/IPython/nbconvert/nbconvertapp.py&quot;, line 401, in convert_notebooks
+    self.convert_single_notebook(notebook_filename)
+  File &quot;/usr/local/lib/python2.7/site-packages/IPython/nbconvert/nbconvertapp.py&quot;, line 372, in convert_single_notebook
+    output, resources = self.export_single_notebook(notebook_filename, resources)
+  File &quot;/usr/local/lib/python2.7/site-packages/IPython/nbconvert/nbconvertapp.py&quot;, line 324, in export_single_notebook
+    output, resources = self.exporter.from_filename(notebook_filename, resources=resources)
+  File &quot;/usr/local/lib/python2.7/site-packages/IPython/nbconvert/exporters/exporter.py&quot;, line 154, in from_filename
+    return self.from_notebook_node(nbformat.read(f, as_version=4), resources=resources, **kw)
+  File &quot;/usr/local/lib/python2.7/site-packages/IPython/nbformat/__init__.py&quot;, line 133, in read
+    return reads(fp.read(), as_version, **kwargs)
+  File &quot;/usr/local/lib/python2.7/site-packages/IPython/nbformat/__init__.py&quot;, line 67, in reads
+    nb = reader.reads(s, **kwargs)
+  File &quot;/usr/local/lib/python2.7/site-packages/IPython/nbformat/reader.py&quot;, line 58, in reads
+    nb_dict = parse_json(s, **kwargs)
+  File &quot;/usr/local/lib/python2.7/site-packages/IPython/nbformat/reader.py&quot;, line 17, in parse_json
+    raise NotJSONError((&quot;Notebook does not appear to be JSON: %r&quot; % s)[:77] + &quot;...&quot;)
+NotJSONError: Notebook does not appear to be JSON: u&apos;\n&lt;!DOCTYPE html&gt;\n&lt;html&gt;\n&lt;head&gt;\n\n&lt;...
+
+If you suspect this is an IPython bug, please report it at:
+    https://github.com/ipython/ipython/issues
+or send an email to the mailing list at ipython-dev@scipy.org
+
+You can print a more detailed traceback right now with &quot;%tb&quot;, or use &quot;%debug&quot;
+to interactively debug it.
+
+Extra-detailed tracebacks for bug-reporting purposes can be enabled via:
+    c.Application.verbose_crash=True
+
+[master 942dc27] Updates Tue May 19 15:42:15 ART 2015
+ 1 file changed, 12 insertions(+), 14 deletions(-)
+Counting objects: 3, done.
 Delta compression using up to 4 threads.
-Compressing objects: 100% (138/138), done.
-Writing objects: 100% (147/147), 2.74 MiB | 57.00 KiB/s, done.
-Total 147 (delta 32), reused 0 (delta 0)
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 562 bytes | 0 bytes/s, done.
+Total 3 (delta 2), reused 0 (delta 0)
 To git@github.com:D3f0/talks.git
-   acc4032..f88ad0f  master -&gt; master
+   487f6ea..942dc27  master -&gt; master
 </pre>
 </div>
 </div>
@@ -654,7 +990,53 @@ To git@github.com:D3f0/talks.git
 </div>
 
 </div>
-    </div></section>
+    </div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[63]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span class="o">!</span>rm EnsenandoConUnPaperInteractivo.*
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[59]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span class="o">!</span>git push origin master
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt"></div>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Counting objects: 22, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (22/22), done.
+Writing objects: 100% (22/22), 94.10 KiB | 0 bytes/s, done.
+Total 22 (delta 5), reused 0 (delta 0)
+To git@github.com:D3f0/talks.git
+   5cc7e59..6062a79  master -&gt; master
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div></section>
     </section>
 </div>
 </div>
