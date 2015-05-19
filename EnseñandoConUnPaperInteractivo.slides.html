@@ -336,19 +336,7 @@ div.output_prompt {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="SHOWTIME">SHOWTIME<a class="anchor-link" href="#SHOWTIME">&#182;</a></h1><h3 id="http://localhost:8888"><a href="http://localhost:8888">http://localhost:8888</a><a class="anchor-link" href="#http://localhost:8888">&#182;</a></h3>
-</div>
-</div>
-</div></section>
-    </section><section>
-    <section>
-    
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Creando-filminas">Creando filminas<a class="anchor-link" href="#Creando-filminas">&#182;</a></h1><p><img src="images/mikey.gif" alt="chiste"></p>
+<h1 id="Herramintas-&#250;tiles-a-la-hora-de-crear-Slides!">Herramintas &#250;tiles a la hora de crear Slides!<a class="anchor-link" href="#Herramintas-&#250;tiles-a-la-hora-de-crear-Slides!">&#182;</a></h1><p><img src="images/mikey.gif" alt="chiste"></p>
 
 </div>
 </div>
@@ -521,35 +509,6 @@ div.output_prompt {
     </section><section>
     <section>
     
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="c"># Enlaces a otros links</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython2"><pre> 
-</pre></div>
-
-</div>
-</div>
-</div>
-
-</div></section>
-    </section><section>
-    <section>
-    
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
 </div>
@@ -650,22 +609,79 @@ Linking ejemplos/programa
 </div>
 </div>
 
-</div>
+</div></section>
+    </section><section>
+    <section>
+    
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[21]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="o">%%</span><span class="k">file</span> ejemplos/en_c.c
+<div class=" highlight hl-ipython2"><pre><span class="o">%%</span><span class="k">file</span> ejemplos/saludar.c
 #include &lt;stdio.h&gt;
 
 int main(void) {
     char cadena[200];
-    fgets
+    printf(&quot;Hola mundo\n&quot;);
 }
 </pre></div>
 
 </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt"></div>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Overwriting ejemplos/saludar.c
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[22]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span class="o">!</span>gcc ejemplos/saludar.c -o ejemplos/saludar
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[23]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span class="o">!</span>ejemplos/saludar
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt"></div>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Hola mundo
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
@@ -940,6 +956,149 @@ INSERT INTO scipylas VALUES (2015, &#39;SciPyLa 2015&#39;, &#39;Posadas, Argenti
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Diagramas">Diagramas<a class="anchor-link" href="#Diagramas">&#182;</a></h1>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[27]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span class="o">%</span><span class="k">install_ext</span> https://raw.github.com/cjdrake/ipython-magic/master/gvmagic.py
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt"></div>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Installed gvmagic.py. To use it, type:
+  %load_ext gvmagic
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[29]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span class="o">%</span><span class="k">load_ext</span> gvmagic
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt"></div>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>The gvmagic extension is already loaded. To reload it, use:
+  %reload_ext gvmagic
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[37]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span class="o">%%</span><span class="k">dot</span>
+digraph G {
+    c1 [label=&quot;Puerto Madryn&quot;];
+    c2 [label=&quot;Buenos Aires&quot;];
+    c3 [label=&quot;Posadas&quot;];
+    c1 -&gt; c2 [color=&quot;red&quot;];
+    c2 -&gt; c3 [color=&quot;green&quot;];
+    
+    {rank=same;c1 c2 c3}
+}
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt"></div>
+
+<div class="output_svg output_subarea ">
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+ "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Generated by graphviz version 2.36.0 (20140111.2315)
+ -->
+<!-- Title: G Pages: 1 -->
+<svg width="374pt" height="44pt"
+ viewBox="0.00 0.00 374.00 44.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 40)">
+<title>G</title>
+<polygon fill="white" stroke="none" points="-4,4 -4,-40 370,-40 370,4 -4,4"/>
+<!-- c1 -->
+<g id="node1" class="node"><title>c1</title>
+<ellipse fill="none" stroke="black" cx="65" cy="-18" rx="65.4659" ry="18"/>
+<text text-anchor="middle" x="65" y="-14.3" font-family="Times,serif" font-size="14.00">Puerto Madryn</text>
+</g>
+<!-- c2 -->
+<g id="node2" class="node"><title>c2</title>
+<ellipse fill="none" stroke="black" cx="208" cy="-18" rx="59.1941" ry="18"/>
+<text text-anchor="middle" x="208" y="-14.3" font-family="Times,serif" font-size="14.00">Buenos Aires</text>
+</g>
+<!-- c1&#45;&gt;c2 -->
+<g id="edge1" class="edge"><title>c1&#45;&gt;c2</title>
+<path fill="none" stroke="red" d="M130.355,-18C133.009,-18 135.663,-18 138.317,-18"/>
+<polygon fill="red" stroke="red" points="138.553,-21.5001 148.553,-18 138.553,-14.5001 138.553,-21.5001"/>
+</g>
+<!-- c3 -->
+<g id="node3" class="node"><title>c3</title>
+<ellipse fill="none" stroke="black" cx="326" cy="-18" rx="39.9464" ry="18"/>
+<text text-anchor="middle" x="326" y="-14.3" font-family="Times,serif" font-size="14.00">Posadas</text>
+</g>
+<!-- c2&#45;&gt;c3 -->
+<g id="edge2" class="edge"><title>c2&#45;&gt;c3</title>
+<path fill="none" stroke="green" d="M267.461,-18C270.224,-18 272.987,-18 275.75,-18"/>
+<polygon fill="green" stroke="green" points="275.754,-21.5001 285.754,-18 275.754,-14.5001 275.754,-21.5001"/>
+</g>
+</g>
+</svg>
+
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div></section>
+    </section><section>
+    <section>
+    
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="Como-generamos-las-filminas?">Como generamos las filminas?<a class="anchor-link" href="#Como-generamos-las-filminas?">&#182;</a></h1><p>Podemos descargar el Notebook en una variedad de formatos...
 <img src="images/export.png" height="300px"></p>
 <p>Pero para utlizar los slides, debemos usar la línea de comandos</p>
@@ -985,6 +1144,21 @@ Neceistamos una copia de <strong>reveal.js</strong> junto a nuestro Archivo.slid
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Formas-de-distribuci&#243;n">Formas de distribuci&#243;n<a class="anchor-link" href="#Formas-de-distribuci&#243;n">&#182;</a></h1>
+<pre><code>* NBViewer
+* </code></pre>
+
+</div>
+</div>
+</div></section>
+    </section><section>
+    <section>
+    
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="Muchas-Gracias!">Muchas Gracias!<a class="anchor-link" href="#Muchas-Gracias!">&#182;</a></h1><p><img src="images/qrcode.png"></p>
 
 </div>
@@ -993,7 +1167,7 @@ Neceistamos una copia de <strong>reveal.js</strong> junto a nuestro Archivo.slid
     
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[2]:</div>
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span class="o">!</span>ipython nbconvert --to slides EnseñandoConUnPaperInteractivo.ipynb
@@ -1015,19 +1189,18 @@ Neceistamos una copia de <strong>reveal.js</strong> junto a nuestro Archivo.slid
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>[NbConvertApp] Converting notebook EnseñandoConUnPaperInteractivo.ipynb to slides
-[NbConvertApp] Writing 1111441 bytes to EnseñandoConUnPaperInteractivo.slides.html
-[master 6642426] Updates Tue May 19 15:57:30 ART 2015
- 4 files changed, 12747 insertions(+), 6 deletions(-)
- create mode 100644 images/logo.png
- create mode 100644 images/logo.svg
- create mode 100644 images/qrcode.png
-Counting objects: 7, done.
+[NbConvertApp] Writing 1112282 bytes to EnseñandoConUnPaperInteractivo.slides.html
+[master 48adae0] Updates Tue May 19 16:00:04 ART 2015
+ 3 files changed, 41 insertions(+), 11 deletions(-)
+ create mode 100644 images/mikey.gif
+ create mode 100644 images/qrcode_mini.png
+Counting objects: 6, done.
 Delta compression using up to 4 threads.
-Compressing objects: 100% (7/7), done.
-Writing objects: 100% (7/7), 744.40 KiB | 0 bytes/s, done.
-Total 7 (delta 3), reused 0 (delta 0)
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (6/6), 934.12 KiB | 0 bytes/s, done.
+Total 6 (delta 3), reused 0 (delta 0)
 To git@github.com:D3f0/talks.git
-   e67e924..6642426  master -&gt; master
+   6642426..48adae0  master -&gt; master
 </pre>
 </div>
 </div>
@@ -1036,20 +1209,7 @@ To git@github.com:D3f0/talks.git
 </div>
 
 </div>
-    </div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython2"><pre> 
-</pre></div>
-
-</div>
-</div>
-</div>
-
-</div></section>
+    </div></section>
     </section>
 </div>
 </div>
