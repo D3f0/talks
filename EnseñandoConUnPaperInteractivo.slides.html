@@ -224,8 +224,8 @@ div.output_prompt {
 <div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="Jupyter-en-clase-(a.k.a-IPython-Notebook)">Jupyter en clase (a.k.a IPython Notebook)<a class="anchor-link" href="#Jupyter-en-clase-(a.k.a-IPython-Notebook)">&#182;</a></h1><p><img src="images/logo.png?foo" alt="Image"></p>
 <div style="text-align: right">
-<a href="http://goo.gl/ZYPNac">
-<img alt="QR" src="images/qrcode.png?foo">
+<a href="http://nbviewer.ipython.org/github/D3f0/talks/blob/master/Ense%C3%B1andoConUnPaperInteractivo.slides.html#/">
+<img alt="QR" src="images/qrcode.png?foo" height="80px">
 </a>
 </div>
 </div>
@@ -297,16 +297,6 @@ div.output_prompt {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="SHOWTIME">SHOWTIME<a class="anchor-link" href="#SHOWTIME">&#182;</a></h1><h3 id="http://localhost:8888"><a href="http://localhost:8888">http://localhost:8888</a><a class="anchor-link" href="#http://localhost:8888">&#182;</a></h3>
-</div>
-</div>
-</div></section><section>
-    
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="Notebooks">Notebooks<a class="anchor-link" href="#Notebooks">&#182;</a></h1><p><img src="images/notebook.png" height="200px" class="center"></p>
 
 </div>
@@ -331,8 +321,22 @@ div.output_prompt {
 <li>Imagenes <code>![alternativo](imagen)</code></li>
 <li>Links <code>[texto](url)</code></li>
 <li>HTML <code>&lt;img src="fooo"&gt;</code></li>
+<li>Resaltado de código ```</li>
+<li><a href="http://daringfireball.net/projects/markdown/syntax">y más...</a></li>
 </ul>
 
+</div>
+</div>
+</div></section>
+    </section><section>
+    <section>
+    
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="SHOWTIME">SHOWTIME<a class="anchor-link" href="#SHOWTIME">&#182;</a></h1><h3 id="http://localhost:8888"><a href="http://localhost:8888">http://localhost:8888</a><a class="anchor-link" href="#http://localhost:8888">&#182;</a></h3>
 </div>
 </div>
 </div></section>
@@ -504,6 +508,35 @@ div.output_prompt {
     </section><section>
     <section>
     
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span class="c"># Enlaces a otros links</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre> 
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div></section>
+    </section><section>
+    <section>
+    
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
 </div>
@@ -601,6 +634,25 @@ Linking ejemplos/programa
 </div>
 </div>
 
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span class="o">%%</span><span class="k">file</span> ejemplos/en_c.c
+#include &lt;stdio.h&gt;
+
+int main(void) {
+    char cadena[200];
+    fgets
+}
+</pre></div>
+
+</div>
 </div>
 </div>
 
@@ -911,11 +963,24 @@ Neceistamos una copia de <strong>reveal.js</strong> junto a nuestro Archivo.slid
 
 </div>
 </div>
+</div></section>
+    </section><section>
+    <section>
+    
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Muchas-Gracias!">Muchas Gracias!<a class="anchor-link" href="#Muchas-Gracias!">&#182;</a></h1><p><img src="images/qrcode.png"></p>
+
+</div>
+</div>
 </div><div style=display:none>
     
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[66]:</div>
+<div class="prompt input_prompt">In&nbsp;[67]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span class="o">!</span>ipython nbconvert --to slides EnseñandoConUnPaperInteractivo.ipynb
@@ -936,16 +1001,16 @@ Neceistamos una copia de <strong>reveal.js</strong> junto a nuestro Archivo.slid
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>[NbConvertApp] Converting notebook EnseñandoConUnPaperInteractivo.ipynb to slides
-[NbConvertApp] Writing 1113489 bytes to EnseñandoConUnPaperInteractivo.slides.html
-[master 89c3823] Updates Tue May 19 15:43:02 ART 2015
- 1 file changed, 408 insertions(+), 26 deletions(-)
+[NbConvertApp] Writing 1110875 bytes to EnseñandoConUnPaperInteractivo.slides.html
+[master 5032ce3] Updates Tue May 19 15:44:21 ART 2015
+ 1 file changed, 11 insertions(+), 47 deletions(-)
 Counting objects: 3, done.
 Delta compression using up to 4 threads.
 Compressing objects: 100% (3/3), done.
-Writing objects: 100% (3/3), 3.38 KiB | 0 bytes/s, done.
+Writing objects: 100% (3/3), 616 bytes | 0 bytes/s, done.
 Total 3 (delta 2), reused 0 (delta 0)
 To git@github.com:D3f0/talks.git
-   3bfae8a..89c3823  master -&gt; master
+   89c3823..5032ce3  master -&gt; master
 </pre>
 </div>
 </div>
@@ -954,53 +1019,7 @@ To git@github.com:D3f0/talks.git
 </div>
 
 </div>
-    </div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[63]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="o">!</span>rm EnsenandoConUnPaperInteractivo.*
-</pre></div>
-
-</div>
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[59]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="o">!</span>git push origin master
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area"><div class="prompt"></div>
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>Counting objects: 22, done.
-Delta compression using up to 4 threads.
-Compressing objects: 100% (22/22), done.
-Writing objects: 100% (22/22), 94.10 KiB | 0 bytes/s, done.
-Total 22 (delta 5), reused 0 (delta 0)
-To git@github.com:D3f0/talks.git
-   5cc7e59..6062a79  master -&gt; master
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div></section>
+    </div></section>
     </section>
 </div>
 </div>
