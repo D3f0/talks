@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="437.14844"
+   height="532.32513"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.48.5 r10040"
+   sodipodi:docname="Documento nuevo 1">
+  <defs
+     id="defs4" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.5"
+     inkscape:cx="100.53498"
+     inkscape:cy="316.95233"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:window-width="1244"
+     inkscape:window-height="700"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Capa 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-44.632812,-149.97156)">
+    <rect
+       style="fill:#e3dbdb;fill-opacity:1;stroke:#000000"
+       id="rect2989"
+       width="265.71429"
+       height="102.85714"
+       x="122.85714"
+       y="198.07646" />
+    <text
+       xml:space="preserve"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="185.24554"
+       y="259.92496"
+       id="text2991"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan2993"
+         x="185.24554"
+         y="259.92496">Jupyter</tspan></text>
+    <rect
+       y="403.56421"
+       x="76.379234"
+       height="71.638786"
+       width="185.06686"
+       id="rect3019"
+       style="fill:#ffeeaa;fill-opacity:1;stroke:#000000;stroke-width:0.6964882" />
+    <text
+       sodipodi:linespacing="125%"
+       id="text3021"
+       y="449.8035"
+       x="98.443924"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       xml:space="preserve"><tspan
+         y="449.8035"
+         x="98.443924"
+         id="tspan3023"
+         sodipodi:role="line">Kernel</tspan></text>
+    <path
+       style="fill:#ffffff;fill-opacity:1;stroke:#000000"
+       d="m 117.42061,504.25885 0,127.875 116.25,0 0,-108.84375 -19.03125,-19.03125 -97.21875,0 z"
+       id="rect3025"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:#e3dbdb;fill-opacity:1;stroke:#000000;stroke-width:1"
+       d="m 233.67061,523.2901 -19.03125,-19.03125 0,19.03125 19.03125,0 z"
+       id="rect3027"
+       inkscape:connector-curvature="0" />
+    <text
+       xml:space="preserve"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="120.51677"
+       y="673.97638"
+       id="text3036"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3038"
+         x="120.51677"
+         y="673.97638">ipynb</tspan></text>
+    <path
+       style="fill:#ffeeaa;fill-opacity:1;stroke:#000000;stroke-width:0.9163034"
+       d="m 194.21875,287.7688 -32.3856,32.3856 18.72695,0 0,62.90995 -18.72695,0 32.3856,32.3856 32.3856,-32.3856 -18.72695,0 0,-62.90995 18.72695,0 -32.3856,-32.3856 z"
+       id="rect3040"
+       inkscape:connector-curvature="0" />
+    <text
+       xml:space="preserve"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="41"
+       y="180.36218"
+       id="text3053"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3055"
+         x="41"
+         y="180.36218">http://localhost:8888/</tspan></text>
+    <rect
+       style="fill:#ffeeaa;fill-opacity:1;stroke:#000000;stroke-width:0.6964882"
+       id="rect3057"
+       width="185.06686"
+       height="71.638786"
+       x="296.37921"
+       y="403.56421" />
+    <text
+       xml:space="preserve"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="318.44391"
+       y="449.8035"
+       id="text3059"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3061"
+         x="318.44391"
+         y="449.8035">Kernel</tspan></text>
+    <path
+       inkscape:connector-curvature="0"
+       id="path3063"
+       d="m 337.42061,504.25885 0,127.875 116.25,0 0,-108.84375 -19.03125,-19.03125 -97.21875,0 z"
+       style="fill:#ffffff;fill-opacity:1;stroke:#000000" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path3065"
+       d="m 453.67061,523.2901 -19.03125,-19.03125 0,19.03125 19.03125,0 z"
+       style="fill:#e3dbdb;fill-opacity:1;stroke:#000000;stroke-width:1" />
+    <text
+       sodipodi:linespacing="125%"
+       id="text3067"
+       y="673.97638"
+       x="340.51678"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       xml:space="preserve"><tspan
+         y="673.97638"
+         x="340.51678"
+         id="tspan3069"
+         sodipodi:role="line">ipynb</tspan></text>
+    <path
+       inkscape:connector-curvature="0"
+       id="path3071"
+       d="m 354.21875,287.7688 -32.3856,32.3856 18.72695,0 0,62.90995 -18.72695,0 32.3856,32.3856 32.3856,-32.3856 -18.72695,0 0,-62.90995 18.72695,0 -32.3856,-32.3856 z"
+       style="fill:#ffeeaa;fill-opacity:1;stroke:#000000;stroke-width:0.9163034" />
+  </g>
+</svg>
