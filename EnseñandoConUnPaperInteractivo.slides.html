@@ -224,7 +224,9 @@ div.output_prompt {
 <div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="Jupyter-en-clase-(a.k.a-IPython-Notebook)">Jupyter en clase (a.k.a IPython Notebook)<a class="anchor-link" href="#Jupyter-en-clase-(a.k.a-IPython-Notebook)">&#182;</a></h1><p><img src="images/logo.png?foo" alt="Image"></p>
 <div style="text-align: right">
-[![QR](images/qrcode.png?foo)](http://goo.gl/ZYPNac)
+<a href="http://goo.gl/ZYPNac">
+<img alt="QR" src="images/qrcode.png?foo">
+</a>
 </div>
 </div>
 </div>
@@ -913,10 +915,10 @@ Neceistamos una copia de <strong>reveal.js</strong> junto a nuestro Archivo.slid
     
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[64]:</div>
+<div class="prompt input_prompt">In&nbsp;[66]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="o">!</span>ipython nbconvert --to slides EnseñandoConUnPaperInteractivo.slides.html
+<div class=" highlight hl-ipython2"><pre><span class="o">!</span>ipython nbconvert --to slides EnseñandoConUnPaperInteractivo.ipynb
 <span class="o">!</span>git add -u
 <span class="o">!</span>git commit -m <span class="s2">&quot;Updates </span><span class="k">$(</span>date<span class="k">)</span><span class="s2">&quot;</span>
 <span class="o">!</span>git push origin master
@@ -933,55 +935,17 @@ Neceistamos una copia de <strong>reveal.js</strong> junto a nuestro Archivo.slid
 
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>[NbConvertApp] Converting notebook EnseñandoConUnPaperInteractivo.slides.html to slides
-Traceback (most recent call last):
-  File &quot;/usr/local/bin/ipython&quot;, line 11, in &lt;module&gt;
-    sys.exit(start_ipython())
-  File &quot;/usr/local/lib/python2.7/site-packages/IPython/__init__.py&quot;, line 120, in start_ipython
-    return launch_new_instance(argv=argv, **kwargs)
-  File &quot;/usr/local/lib/python2.7/site-packages/IPython/config/application.py&quot;, line 574, in launch_instance
-    app.start()
-  File &quot;/usr/local/lib/python2.7/site-packages/IPython/terminal/ipapp.py&quot;, line 367, in start
-    return self.subapp.start()
-  File &quot;/usr/local/lib/python2.7/site-packages/IPython/nbconvert/nbconvertapp.py&quot;, line 278, in start
-    self.convert_notebooks()
-  File &quot;/usr/local/lib/python2.7/site-packages/IPython/nbconvert/nbconvertapp.py&quot;, line 401, in convert_notebooks
-    self.convert_single_notebook(notebook_filename)
-  File &quot;/usr/local/lib/python2.7/site-packages/IPython/nbconvert/nbconvertapp.py&quot;, line 372, in convert_single_notebook
-    output, resources = self.export_single_notebook(notebook_filename, resources)
-  File &quot;/usr/local/lib/python2.7/site-packages/IPython/nbconvert/nbconvertapp.py&quot;, line 324, in export_single_notebook
-    output, resources = self.exporter.from_filename(notebook_filename, resources=resources)
-  File &quot;/usr/local/lib/python2.7/site-packages/IPython/nbconvert/exporters/exporter.py&quot;, line 154, in from_filename
-    return self.from_notebook_node(nbformat.read(f, as_version=4), resources=resources, **kw)
-  File &quot;/usr/local/lib/python2.7/site-packages/IPython/nbformat/__init__.py&quot;, line 133, in read
-    return reads(fp.read(), as_version, **kwargs)
-  File &quot;/usr/local/lib/python2.7/site-packages/IPython/nbformat/__init__.py&quot;, line 67, in reads
-    nb = reader.reads(s, **kwargs)
-  File &quot;/usr/local/lib/python2.7/site-packages/IPython/nbformat/reader.py&quot;, line 58, in reads
-    nb_dict = parse_json(s, **kwargs)
-  File &quot;/usr/local/lib/python2.7/site-packages/IPython/nbformat/reader.py&quot;, line 17, in parse_json
-    raise NotJSONError((&quot;Notebook does not appear to be JSON: %r&quot; % s)[:77] + &quot;...&quot;)
-NotJSONError: Notebook does not appear to be JSON: u&apos;\n&lt;!DOCTYPE html&gt;\n&lt;html&gt;\n&lt;head&gt;\n\n&lt;...
-
-If you suspect this is an IPython bug, please report it at:
-    https://github.com/ipython/ipython/issues
-or send an email to the mailing list at ipython-dev@scipy.org
-
-You can print a more detailed traceback right now with &quot;%tb&quot;, or use &quot;%debug&quot;
-to interactively debug it.
-
-Extra-detailed tracebacks for bug-reporting purposes can be enabled via:
-    c.Application.verbose_crash=True
-
-[master 942dc27] Updates Tue May 19 15:42:15 ART 2015
- 1 file changed, 12 insertions(+), 14 deletions(-)
+<pre>[NbConvertApp] Converting notebook EnseñandoConUnPaperInteractivo.ipynb to slides
+[NbConvertApp] Writing 1113489 bytes to EnseñandoConUnPaperInteractivo.slides.html
+[master 89c3823] Updates Tue May 19 15:43:02 ART 2015
+ 1 file changed, 408 insertions(+), 26 deletions(-)
 Counting objects: 3, done.
 Delta compression using up to 4 threads.
 Compressing objects: 100% (3/3), done.
-Writing objects: 100% (3/3), 562 bytes | 0 bytes/s, done.
+Writing objects: 100% (3/3), 3.38 KiB | 0 bytes/s, done.
 Total 3 (delta 2), reused 0 (delta 0)
 To git@github.com:D3f0/talks.git
-   487f6ea..942dc27  master -&gt; master
+   3bfae8a..89c3823  master -&gt; master
 </pre>
 </div>
 </div>
