@@ -600,13 +600,13 @@ Neceistamos una copia de <strong>reveal.js</strong> junto a nuestro Archivo.slid
     
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[7]:</div>
+<div class="prompt input_prompt">In&nbsp;[11]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span class="o">!</span>ipython nbconvert --to slides EnseñandoConUnPaperInteractivo.ipynb
 <span class="o">!</span>git add -u
 <span class="o">!</span>git commit -m <span class="s2">&quot;Updates </span><span class="k">$(</span>date<span class="k">)</span><span class="s2">&quot;</span>
-<span class="n">g</span> <span class="n">add</span> 
+<span class="o">!</span>open EnseñandoConUnPaperInteractivo.slides.html
 </pre></div>
 
 </div>
@@ -619,19 +619,11 @@ Neceistamos una copia de <strong>reveal.js</strong> junto a nuestro Archivo.slid
 
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>On branch master
-Your branch is ahead of &apos;origin/master&apos; by 1 commit.
-  (use &quot;git push&quot; to publish your local commits)
-Untracked files:
-	<span class="ansired">Telling Technology Stories with IPython Notebook-XkXXpaVpNSc.mp4</span>
-	<span class="ansired">ejemplos/</span>
-	<span class="ansired">images/logo.png</span>
-	<span class="ansired">images/logo.svg</span>
-	<span class="ansired">windows.mov</span>
-
-nothing added to commit but untracked files present
-[NbConvertApp] Converting notebook EnseñandoConUnPaperInteractivo.ipynb to slides
-[NbConvertApp] Writing 1099050 bytes to EnseñandoConUnPaperInteractivo.slides.html
+<pre>[NbConvertApp] Converting notebook EnseñandoConUnPaperInteractivo.ipynb to slides
+[NbConvertApp] Writing 1099862 bytes to EnseñandoConUnPaperInteractivo.slides.html
+[master 24827af] Updates Tue May 19 15:00:42 ART 2015
+ 2 files changed, 798 insertions(+), 845 deletions(-)
+ rewrite EnseñandoConUnPaperInteractivo.slides.html (61%)
 </pre>
 </div>
 </div>
@@ -643,43 +635,13 @@ nothing added to commit but untracked files present
     </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[6]:</div>
+<div class="prompt input_prompt">In&nbsp;[14]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre> 
+<div class=" highlight hl-ipython2"><pre><span class="o">!</span>git 
 </pre></div>
 
 </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area"><div class="prompt"></div>
-<div class="output_subarea output_stream output_stdout output_text">
-<pre><span class="ansiyellow">commit 54d785f792f527b0a763a4b29d4a9eb7ae8d63ae</span>
-Author: Nahuel Defosse &lt;nahuel.defosse@gmail.com&gt;
-Date:   Tue May 19 14:57:51 2015 -0300
-
-    Updates Tue May 19 14:57:51 ART 2015
-
-<span class="ansiyellow">commit acc4032f4e697f96f44c45506a0c75eedbb1ebf5</span>
-Author: Nahuel Defosse &lt;nahuel.defosse@gmail.com&gt;
-Date:   Tue May 19 12:48:57 2015 -0300
-
-    Slides
-
-<span class="ansiyellow">commit 4d609b03743f3cb48e895b27908cc7214db3ee51</span>
-Author: Nahuel Defosse &lt;nahuel.defosse@gmail.com&gt;
-Date:   Tue May 19 12:45:48 2015 -0300
-
-    Esbozo inicial
-</pre>
-</div>
-</div>
-
 </div>
 </div>
 
