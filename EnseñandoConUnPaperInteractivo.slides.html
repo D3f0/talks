@@ -600,7 +600,7 @@ Neceistamos una copia de <strong>reveal.js</strong> junto a nuestro Archivo.slid
     
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[11]:</div>
+<div class="prompt input_prompt">In&nbsp;[17]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span class="o">!</span>ipython nbconvert --to slides EnseñandoConUnPaperInteractivo.ipynb
@@ -620,10 +620,18 @@ Neceistamos una copia de <strong>reveal.js</strong> junto a nuestro Archivo.slid
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>[NbConvertApp] Converting notebook EnseñandoConUnPaperInteractivo.ipynb to slides
-[NbConvertApp] Writing 1099862 bytes to EnseñandoConUnPaperInteractivo.slides.html
-[master 24827af] Updates Tue May 19 15:00:42 ART 2015
- 2 files changed, 798 insertions(+), 845 deletions(-)
- rewrite EnseñandoConUnPaperInteractivo.slides.html (61%)
+[NbConvertApp] Writing 1098766 bytes to EnseñandoConUnPaperInteractivo.slides.html
+On branch master
+Your branch is ahead of &apos;origin/master&apos; by 4 commits.
+  (use &quot;git push&quot; to publish your local commits)
+Untracked files:
+	<span class="ansired">Telling Technology Stories with IPython Notebook-XkXXpaVpNSc.mp4</span>
+	<span class="ansired">ejemplos/</span>
+	<span class="ansired">images/logo.png</span>
+	<span class="ansired">images/logo.svg</span>
+	<span class="ansired">windows.mov</span>
+
+nothing added to commit but untracked files present
 </pre>
 </div>
 </div>
@@ -635,13 +643,126 @@ Neceistamos una copia de <strong>reveal.js</strong> junto a nuestro Archivo.slid
     </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[14]:</div>
+<div class="prompt input_prompt">In&nbsp;[15]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="o">!</span>git 
+<div class=" highlight hl-ipython2"><pre><span class="o">!</span>git commit -m <span class="s2">&quot;Adding reveal&quot;</span>
 </pre></div>
 
 </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt"></div>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>[master ac61192] Adding reveal
+ 98 files changed, 19972 insertions(+)
+ create mode 100644 reveal.js/CONTRIBUTING.md
+ create mode 100644 reveal.js/Gruntfile.js
+ create mode 100644 reveal.js/LICENSE
+ create mode 100644 reveal.js/README.md
+ create mode 100644 reveal.js/css/print/paper.css
+ create mode 100644 reveal.js/css/print/pdf.css
+ create mode 100644 reveal.js/css/reveal.css
+ create mode 100644 reveal.js/css/reveal.scss
+ create mode 100644 reveal.js/css/theme/README.md
+ create mode 100644 reveal.js/css/theme/beige.css
+ create mode 100644 reveal.js/css/theme/black.css
+ create mode 100644 reveal.js/css/theme/blood.css
+ create mode 100644 reveal.js/css/theme/league.css
+ create mode 100644 reveal.js/css/theme/moon.css
+ create mode 100644 reveal.js/css/theme/night.css
+ create mode 100644 reveal.js/css/theme/serif.css
+ create mode 100644 reveal.js/css/theme/simple.css
+ create mode 100644 reveal.js/css/theme/sky.css
+ create mode 100644 reveal.js/css/theme/solarized.css
+ create mode 100644 reveal.js/css/theme/source/beige.scss
+ create mode 100644 reveal.js/css/theme/source/black.scss
+ create mode 100644 reveal.js/css/theme/source/blood.scss
+ create mode 100644 reveal.js/css/theme/source/league.scss
+ create mode 100644 reveal.js/css/theme/source/moon.scss
+ create mode 100644 reveal.js/css/theme/source/night.scss
+ create mode 100644 reveal.js/css/theme/source/serif.scss
+ create mode 100644 reveal.js/css/theme/source/simple.scss
+ create mode 100644 reveal.js/css/theme/source/sky.scss
+ create mode 100644 reveal.js/css/theme/source/solarized.scss
+ create mode 100644 reveal.js/css/theme/source/white.scss
+ create mode 100644 reveal.js/css/theme/template/mixins.scss
+ create mode 100644 reveal.js/css/theme/template/settings.scss
+ create mode 100644 reveal.js/css/theme/template/theme.scss
+ create mode 100644 reveal.js/css/theme/white.css
+ create mode 100644 reveal.js/index.html
+ create mode 100644 reveal.js/js/reveal.js
+ create mode 100644 reveal.js/lib/css/zenburn.css
+ create mode 100644 reveal.js/lib/font/league-gothic/LICENSE
+ create mode 100644 reveal.js/lib/font/league-gothic/league-gothic.css
+ create mode 100755 reveal.js/lib/font/league-gothic/league-gothic.eot
+ create mode 100755 reveal.js/lib/font/league-gothic/league-gothic.ttf
+ create mode 100755 reveal.js/lib/font/league-gothic/league-gothic.woff
+ create mode 100644 reveal.js/lib/font/source-sans-pro/LICENSE
+ create mode 100755 reveal.js/lib/font/source-sans-pro/source-sans-pro-italic.eot
+ create mode 100755 reveal.js/lib/font/source-sans-pro/source-sans-pro-italic.ttf
+ create mode 100755 reveal.js/lib/font/source-sans-pro/source-sans-pro-italic.woff
+ create mode 100755 reveal.js/lib/font/source-sans-pro/source-sans-pro-regular.eot
+ create mode 100755 reveal.js/lib/font/source-sans-pro/source-sans-pro-regular.ttf
+ create mode 100755 reveal.js/lib/font/source-sans-pro/source-sans-pro-regular.woff
+ create mode 100755 reveal.js/lib/font/source-sans-pro/source-sans-pro-semibold.eot
+ create mode 100755 reveal.js/lib/font/source-sans-pro/source-sans-pro-semibold.ttf
+ create mode 100755 reveal.js/lib/font/source-sans-pro/source-sans-pro-semibold.woff
+ create mode 100755 reveal.js/lib/font/source-sans-pro/source-sans-pro-semibolditalic.eot
+ create mode 100755 reveal.js/lib/font/source-sans-pro/source-sans-pro-semibolditalic.ttf
+ create mode 100755 reveal.js/lib/font/source-sans-pro/source-sans-pro-semibolditalic.woff
+ create mode 100644 reveal.js/lib/font/source-sans-pro/source-sans-pro.css
+ create mode 100644 reveal.js/lib/js/classList.js
+ create mode 100644 reveal.js/lib/js/head.min.js
+ create mode 100644 reveal.js/lib/js/html5shiv.js
+ create mode 100644 reveal.js/package.json
+ create mode 100644 reveal.js/plugin/highlight/highlight.js
+ create mode 100644 reveal.js/plugin/leap/leap.js
+ create mode 100644 reveal.js/plugin/markdown/example.html
+ create mode 100644 reveal.js/plugin/markdown/example.md
+ create mode 100755 reveal.js/plugin/markdown/markdown.js
+ create mode 100644 reveal.js/plugin/markdown/marked.js
+ create mode 100755 reveal.js/plugin/math/math.js
+ create mode 100644 reveal.js/plugin/multiplex/client.js
+ create mode 100644 reveal.js/plugin/multiplex/index.js
+ create mode 100644 reveal.js/plugin/multiplex/master.js
+ create mode 100644 reveal.js/plugin/notes-server/client.js
+ create mode 100644 reveal.js/plugin/notes-server/index.js
+ create mode 100644 reveal.js/plugin/notes-server/notes.html
+ create mode 100644 reveal.js/plugin/notes/notes.html
+ create mode 100644 reveal.js/plugin/notes/notes.js
+ create mode 100644 reveal.js/plugin/print-pdf/print-pdf.js
+ create mode 100644 reveal.js/plugin/remotes/remotes.js
+ create mode 100644 reveal.js/plugin/search/search.js
+ create mode 100644 reveal.js/plugin/zoom-js/zoom.js
+ create mode 100644 reveal.js/test/examples/assets/image1.png
+ create mode 100644 reveal.js/test/examples/assets/image2.png
+ create mode 100644 reveal.js/test/examples/barebones.html
+ create mode 100644 reveal.js/test/examples/embedded-media.html
+ create mode 100644 reveal.js/test/examples/math.html
+ create mode 100644 reveal.js/test/examples/slide-backgrounds.html
+ create mode 100644 reveal.js/test/examples/slide-transitions.html
+ create mode 100644 reveal.js/test/qunit-1.12.0.css
+ create mode 100644 reveal.js/test/qunit-1.12.0.js
+ create mode 100644 reveal.js/test/test-markdown-element-attributes.html
+ create mode 100644 reveal.js/test/test-markdown-element-attributes.js
+ create mode 100644 reveal.js/test/test-markdown-slide-attributes.html
+ create mode 100644 reveal.js/test/test-markdown-slide-attributes.js
+ create mode 100644 reveal.js/test/test-markdown.html
+ create mode 100644 reveal.js/test/test-markdown.js
+ create mode 100644 reveal.js/test/test-pdf.html
+ create mode 100644 reveal.js/test/test-pdf.js
+ create mode 100644 reveal.js/test/test.html
+ create mode 100644 reveal.js/test/test.js
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
