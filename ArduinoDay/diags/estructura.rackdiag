@@ -1,0 +1,32 @@
+rackdiag {
+  rack {
+    5U;
+    5: Sketch (setup/loop)
+    4: Wiring + Librerías
+    3: Librería C++
+    3: Librería C
+    2: Compilador AVR
+    1: Atmega328/32/etc.
+  }
+
+  rack {
+    5U;
+    5: Sketch
+    4: Wiring + Librerías
+    3: Librería C/C++
+    2: Compilador ARM
+    1: Teensy (Cortex M3)
+  }
+
+  rack {
+    6U;
+    6: Sketch
+    5: Wiring + Librerías
+    4: Librería C/C++
+    3: Compilador Intel
+    2: Ejecutable Linux
+    1: Yocto
+  }
+
+
+}
