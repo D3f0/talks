@@ -1,0 +1,30 @@
+<Ventana>:
+
+    BoxLayout:
+        size: root.size
+        orientation: 'vertical'
+        Button:
+            text: "Hola"
+            on_press: import pdb; pdb.set_trace()
+        Button:
+            text: "Copiar Texto"
+            on_press: texto2.text = texto.text
+        TextInput:
+            id: texto
+
+        Label:
+            id: texto2
+
+        GridLayout:
+            cols: 2
+            rows: 1
+            Slider:
+                id: slider
+            Label:
+                text: "%.2f" % slider.value
+
+
+
+
+
+
