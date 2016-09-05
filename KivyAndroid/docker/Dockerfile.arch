@@ -1,0 +1,11 @@
+FROM base/archlinux
+MAINTAINER nahuel (dot) defosse (at) gmail
+RUN sed -i "s/SigLevel    = Required DatabaseOptional/SigLevel = Never/" /etc/pacman.conf
+RUN pacman -Sy --noconfirm python2 git python-pip tmux
+# Multimedia stuff
+RUN yes | pacman -S --noconfirm ffmpeg sdl2_image sdl2_mixer sdl2_ttf smpeg portmidi zlib wget curl
+# Pygame is Mercurial repo 
+RUN pacman -Sy mercurial
+
+RUN pip install -U pip
+

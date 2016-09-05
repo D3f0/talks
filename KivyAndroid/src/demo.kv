@@ -1,0 +1,27 @@
+
+<MyWidget>:
+  BoxLayout:
+    size: root.size
+    padding: 20
+    orientation: "vertical"
+
+    MiBoton:
+      text: "1"
+      on_press: print(locals())
+      #background_normal: "images/the_internet.png"
+    MiBoton:
+      text: "2"
+    MiBoton:
+      text: "3"
+
+    Slider:
+      id: slider
+    Label:
+      text: str(slider.value * 2)
+      font_size: 40
+    CheckBox:
+      id: check
+    
+
+<MiBoton@Button>:
+  background_normal: "images/the_internet.png"

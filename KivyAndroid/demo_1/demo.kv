@@ -1,0 +1,19 @@
+<MiWidget>:
+    BoxLayout:
+        orientation: 'vertical'
+        size: root.size
+        pos: root.pos
+
+        BoxLayout:
+            size_hint_y: .2
+            Button:
+                text: texto.text
+                on_press: app.saludar()
+            Button:
+                text: "Salir"
+                on_press: import sys; sys.exit(0)
+        Label:
+            text: "%2.3f" % slider.value
+            id: texto
+        Slider:
+            id: slider
