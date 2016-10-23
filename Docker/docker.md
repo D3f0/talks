@@ -110,9 +110,9 @@ root
 # ¿Qué ocurrió?
 
  * Docker bajó la imagen de [**dockerhub.io**](https://hub.docker.com/search/?isAutomated=0&isOfficial=0&page=1&pullCount=0&q=debian&starCount=0)
- * Como no le dijimos que versión, bajó `latest` (es lo mismo que haberle puesto `docker run -ti debian:latest bash` [^versions]).
+ * Como no le dijimos que versión, bajó `latest` (es lo mismo que haberle puesto **`docker run -ti debian:latest bash`** [^versions]).
  * Se creó un  *contenedor* a partir de la imagen de *debian*.
- * Si iniciamos `docker ps` en otro terminal, veremos detalles sobre el contenedor.
+ * Si iniciamos **`docker ps`** en otro terminal, veremos detalles sobre el contenedor.
 
 [^versions]: Otra versión podría ser `jessie`, `stable`, `oldstable`.
 
