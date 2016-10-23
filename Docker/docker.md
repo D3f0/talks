@@ -9,9 +9,14 @@ header-includes:
 
 ---
 
-# Indice
+# Resumen
 
-\tableofcontents
+* Qué es Docker
+* Qué diferencia existe con una máquina virtual.
+* Cómo crear contenedores
+* Cómo comunicar contenedores con el **sistema de archivos** y con la **red** del SO anfitrión.
+*  Cómo crear imágenes de nuestro propio software.
+*  Cómo utilizar más de un contenedor de manera organizada
 
 # Docker vs Máquinas Virtuales
 
