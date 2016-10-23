@@ -214,8 +214,10 @@ Docker permite exponer puertos que se comparten de manera automática con el hos
 * Los contenedores **no se pierden** cuando **termina su ejecución**, podemos ver una lista de lo que hemos ejecutado con **`docker ps -a`**.
 * Si queremos un contenedor transitorio, que limpie sus rastros tras terminar agrgamos a **`run`**  el argumento **`--rm`**.
 * Para borrar contenedores viejos, **`docker rm <NOMBRE>`** o **`docker rm <CONTAINER ID>`**.
-* Podemos re-lanzar contenedores viejos utilizando `docker start <NOMBRE>` o `docker start <CONTAINER ID>`.
-* Al momento del `run` podemos dar un nombre a un contenedor con `--name`, evitando que Docker genere uno aleatorio (típicamente conformado por un adjetivo y una personalidad histórica).
+* Podemos re-lanzar contenedores viejos utilizando **`docker start <NOMBRE>`** o **`docker start <CONTAINER ID>`**.
+* Al momento del **`run`** podemos dar un nombre a un contenedor con **`--name`** [^random_name]
+
+[^random_name]: Así evitando la generación uno aleatorio (Ej: **`crazy_einstein`**
 
 
 # Contenedores en Segundo Plano
