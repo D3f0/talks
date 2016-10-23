@@ -289,16 +289,29 @@ FROM debian:latest
 MAINTAINER <someone@somewhere.net>
 
 RUN apt-get update -qq
-RUN apt-get install build-essentials
-ADD ./src /src
-RUN gcc /src/mi_programa.c -o /bin/mi_programa
-CMD ["/bin/mi_programa"]
+RUN apt-get install -qq -y build-essential
+RUN adduser user
+USER user
+WORKDIR /home/user
+ADD ./src /home/user/src
+RUN gcc src/mi_programa.c -o mi_programa
+CMD ["/home/user/mi_programa"]
 ```
 
 * Una vez conformado el `Dockerfile` se ejecuta `build` dándole un nombre a la imagen producida [^whydot]
 ```
-docker build -t <NOMBRE> .
+docker build -t mi_c .
 ```
+
+# Ejemplo básico (cont)
+
+* Ahora podemos ejecutar nuestra imagen con `docker run -ti mi_c`.
+  - Si le damos un nombre, también nos podemos *"attachar"* y lanzar más comandos.
+
+
+# Estructura
+
+![](images/docker_struct.eps)
 
 # Ejemplo de extensión de `Dockerfile`
 
