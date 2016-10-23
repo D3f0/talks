@@ -6,10 +6,10 @@ lang: es-AR
 header-includes:
     - \usepackage[normalem]{ulem}
     - \usepackage{fancyhdr}
-    - \pagestyle{fancy}
     - \fancyfoot[CO,CE]{}
     - \fancyfoot[LE,RO]{}
 ---
+    <!-- - \pagestyle{fancy} -->
 
 # Indice
 
