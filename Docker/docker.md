@@ -116,7 +116,7 @@ root
 
 [^versions]: Otra versión podría ser `jessie`, `stable`, `oldstable`.
 
-# Imagenes
+# Imágenes
 
 * Las imágenes nos permiten iniciar contenedores. Los tamaños suelen ser mucho más pequeños que la máquina virtual equivalente.
 
@@ -133,7 +133,7 @@ debian              latest              7b0a06c805e8
 # Imagenes (cont).
 
  * Las imágnees puede descargarse con `docker pull` además de ser automáticamente descargads por `docker run`.
- * Se pueden borrar con `docker rmi nombre` o `docker rmi <IMAGE ID>`.
+ * Se pueden borrar con `docker rmi <NOMBRE>` o `docker rmi <IMAGE ID>`.
  * Existen imagenes de diferentes linux como debian, centos, ubuntu pero también de productos específicos como mysql, httpd (apache) o postgres [^img_dock]
  * Las imágenes de productos ya conocen el binario que deben ejecutar
 
@@ -261,6 +261,7 @@ docker run --name apache   \
     - `EXPOSE` exponer un puerto
     - `CMD` y `ENTRYPOINT` comando por defecto
     - `USER` y `WORKDIR` definen el usuario y directorio de trabajo por defecto.
+    - `VOLUME` para definir directorios persistentes
 * Una vez conformado el `Dockerfile` se ejecuta `build` dándole un nombre a la imagen producida [^whydot]
 ```
 docker build -t <NOMBRE> .
