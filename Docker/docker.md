@@ -278,11 +278,7 @@ docker run --name apache   \
     - **`EXPOSE`** exponer un puerto
     - **`CMD`** y **`ENTRYPOINT`** comando por defecto
     - **`USER`** y **`WORKDIR`** definen el usuario y directorio de trabajo por defecto.
-    - `VOLUME` para definir directorios persistentes
-* Una vez conformado el `Dockerfile` se ejecuta `build` dándole un nombre a la imagen producida [^whydot]
-```
-docker build -t <NOMBRE> .
-```
+    - **`VOLUME`** para definir directorios persistentes
 
 [^whydot]: El . define el directorio actual dónde se buscará el `Dockerfile`
 
@@ -299,6 +295,10 @@ RUN gcc /src/mi_programa.c -o /bin/mi_programa
 CMD ["/bin/mi_programa"]
 ```
 
+* Una vez conformado el `Dockerfile` se ejecuta `build` dándole un nombre a la imagen producida [^whydot]
+```
+docker build -t <NOMBRE> .
+```
 
 # Ejemplo de extensión de `Dockerfile`
 
