@@ -10,6 +10,8 @@ else
     endif
 endif
 
+
+
 all: open commit_and_push
 
 %.pdf: %.md
@@ -22,6 +24,6 @@ open: docker.pdf
 commit_and_push: docker.pdf
 	git add -u .
 	git add images
-	git commit -m "Update $(basename $(pwd)) $(date)"
+	git commit -m "Update `date`"
 	git push
-
+	echo $(UPDATE_MSG)
