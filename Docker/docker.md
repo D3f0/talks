@@ -224,6 +224,7 @@ Docker permite exponer puertos que se comparten de manera automática con el hos
 [^random_name]: Así evitando la generación uno aleatorio (Ej: **`crazy_einstein`**
 
 
+
 # Gestión de Contenedores (cont)
 
 ## Interactivo y Desacoplado
@@ -236,7 +237,6 @@ Docker permite exponer puertos que se comparten de manera automática con el hos
 * Si el contenedor no está ej ejecución, podemos inciarlo con `docker start <NOMBRE>`.
 * Sirve para explorar el filesystem y realizar pruebas.
 * Ej: `docker exec apachecito bash`
-
 
 # Gestión de Contenedores (cont)
 
@@ -271,7 +271,7 @@ docker run --name apache   \
   httpd
 ```
 
-# Creando Imágenes Propias (a.k.a.`Dockerfile`s)
+# Creando Imágenes (a.k.a. `Dockerfile`s)
 
 * Un `Dockerfile` es un archivo que define como crear una nueva imagen.
 * Dentro de un `Dockerfile` se definen un conunto de líneas de la forma `<COMANDO> <ARGUMENTOS>...`, algunos comandos son:
@@ -297,7 +297,7 @@ RUN apt-get install -qq -y build-essential
 RUN adduser user
 USER user
 WORKDIR /home/user
-ADD ./src /home/user/src
+ADD ./src src
 RUN gcc src/mi_programa.c -o mi_programa
 CMD ["/home/user/mi_programa"]
 ```
@@ -311,7 +311,10 @@ docker build -t mi_c .
 
 * Ahora podemos ejecutar nuestra imagen con `docker run -ti mi_c`.
   - Si le damos un nombre, también nos podemos *"attachar"* y lanzar más comandos.
-
+* Este contenedor crea un usuario `user`, por lo que no corre con el UID 0 (o sea no es **`root`**).
+* Una vez que definimos **`WORKDIR`**:
+    - Todas las rutas son relativas a esta ubicación
+    - **`run`** y **`start`** arrancan en esa ubicación
 
 
 # Ejemplo de extensión de `Dockerfile`
