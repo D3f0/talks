@@ -20,7 +20,7 @@ open: docker.pdf
 	$(OPEN) *.pdf
 
 commit_and_push: docker.pdf
-	git add -u
+	git add -u .
 	git add images
 	git commit -m "Update $(basename $(pwd)) $(date)"
 	git push
