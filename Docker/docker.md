@@ -311,6 +311,7 @@ docker build -t mi_c .
 
 # Estructura
 
+
 ![](images/docker_struct.eps)
 
 # Ejemplo de extensión de `Dockerfile`
