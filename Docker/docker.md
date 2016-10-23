@@ -4,7 +4,12 @@ subtitle: Material en [GitHub](https://github.com/D3f0/talks/)
 author: Nahuel Defossé
 lang: es-AR
 header-includes:
-  - \usepackage[normalem]{ulem}
+    - \usepackage[normalem]{ulem}
+    - \usepackage{fancyhdr}
+    - \pagestyle{fancy}
+    - \fancyhead[CO,CE]{This is fancy}
+    - \fancyfoot[CO,CE]{So is this}
+    - \fancyfoot[LE,RO]{\thepage}
 ---
 
 # Indice
