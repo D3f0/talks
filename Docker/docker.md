@@ -155,7 +155,7 @@ debian              latest              7b0a06c805e8
 
 # Sistema de archivos
 
-```bash
+```
 $ docker run -ti debian bash
 root@9b6cecd04132:/# echo "Prueba" > prueba
 root@9b6cecd04132:/# cat prueba
