@@ -246,19 +246,19 @@ Docker permite exponer puertos que se comparten de manera automática con el hos
     + **`--restart always`** Siempre reinicia el contenedor independientemente del estado de salida. Se iniciará automáticamente **cuando el servcio docker se arranque**.
     + **`--restart unless-stopped`** Siempre se reinicia hasta que se para (**`stop`**). Al inicio del servicio docker, tomará el estado anterior.
 
-# Reuniendo Todo
-## Crenado un contenedor con nuestro HTML
+# Ejemplo
+## Creando un contenedor con httpd (apache)
 
 1. Creamos el contenedor desacoplado
-  `docker run -d --name apache httpd`
+  **`docker run -d --name apache httpd`**
 2. Nos conectamos y buscamos la carpeta `htdocs`:
 ```
 $ docker exec apache bash
 root@a31d58f35fea:/# find / -name htdocs
 /usr/local/apache2/htdocs
 ```
-3. Vamos a recrear el contenedor, primero lo borramos: `docker rm apache`.
-4. Creamos una carpeta con contenido: `mkdir htdocs && echo "Hola mundo" > htdocs/index.html`
+3. Vamos a recrear el contenedor, primero lo borramos: **`docker rm apache`**.
+4. Creamos una carpeta con contenido: **`mkdir htdocs && echo "Hola mundo" > htdocs/index.html`**
 5.
 ```
 docker run --name apache   \
