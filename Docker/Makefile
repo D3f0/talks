@@ -10,8 +10,18 @@ else
     endif
 endif
 
+all: open commit_and_push
+
 %.pdf: %.md
 	pandoc -t beamer -s $^ -o $@
 
-all: docker.pdf
+
+open: docker.pdf
 	$(OPEN) *.pdf
+
+commit_and_push: docker.pdf
+	git add -u
+	git add images
+	git commit -m "Update $(basename $(pwd)) $(date)"
+	git push
+

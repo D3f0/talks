@@ -1,5 +1,6 @@
 ---
 title: Breve introducción a Docker
+subtitle: Material en [GitHub](https://github.com/D3f0/talks/)
 author: Nahuel Defossé
 lang: es-AR
 ---
@@ -8,18 +9,21 @@ lang: es-AR
 
 \tableofcontents
 
-# Contenedores
+# Docker vs Máquinas Virtuales
 
 Los contenedores permiten a las aplicaciones:
 
- * Simplificar su desarrollo
-    - Evita el **funciona en mi máquina**. Evita discrepancias entre los entornos.
+| Métrica | Docker | VMs |
+|---------+--------+--------------------|
+| Aislamiento  | Bajo | Alto |
+| Arranque | Segundos | Minutos |
+| SO | Linux [^dock_support] | Linux, Windows, OSX |
+| Tamaño | 100M+ | 1G+ |
+| Construcción de Imágenes | Corto (minutos) | Largo (Horas) |
+| Cantidad Máxima | >50 | <10 |
+| Hosting | Docker Hub, Gitlab | ISOs, Vagrant Cloud |
 
- * Simplificar su distribución.
- * Aprovechar mejor los recursos
-    - Un contenedor es como una VM **liviana**.
-      Permite aprovechar mejor el CPU, memoria y disco.
- * Facilitan escalamiento horizontal.
+[^dock_support]: Se puede utilizar a través de VirtualBox, xhyve (MacOS) o HyperV (Windows)
 
 # Máquinas virtuales...
 
@@ -27,13 +31,16 @@ Los contenedores permiten a las aplicaciones:
 
 #  ...y contenedores
 
-![Apliaciones en ejecución con VM](images/WhatIsDocker_3_Containers_1.png)
+![Apliaciones en ejecución en Docker](images/WhatIsDocker_3_Containers_1.png)
 
 # Instalación
 
 ## Linux
  * Disponible en el sistema de paquetes
  * [Guía de Instalación en Ubuntu]( https://docs.docker.com/engine/installation/linux/ubuntulinux/)
+ * Imporntante agregarse al grupo docker
+  `sudo gpasswd -a $(whoami) docker` y volver a iniciar sesión.
+
 
 # Instalación
 
@@ -80,34 +87,212 @@ virtual.
 
 # Primer ejecución de un contenedor
 
-### Ejecución bash en una imagen **debian** [^*]
+### Ejecución bash [^*] en una imagen **debian**
 
-```bash
-docker run -ti debian bash
 ```
+docker run -ti debian bash
+Unable to find image debian:latest locally
+latest: Pulling from library/debian
 
-### La salida
-
-```bash
-root@f601df7b7dd9:/# whoami
+43c265008fae: Pull complete
+Digest: sha256:c1af755d300d0c65bb1194d24bc
+Status: Downloaded newer image for debian:latest
+root@f601df7b7dd9:/# whoami; pwd; ps
 root
-root@f601df7b7dd9:/# pwd
 /
-root@f601df7b7dd9:/# ps
   PID TTY          TIME CMD
     1 ?        00:00:00 bash
-    8 ?        00:00:00 ps  
+    8 ?        00:00:00 ps
 ```
 
-[^*]: `-ti` tty e interactivo
+[^*]: `-ti` en `run` indican uso de una `tty` y modo `interactivo` en vez de background.
 
 # ¿Qué ocurrió?
 
-## docker run
+ * Docker bajó la imagen de [dockerhub.io](https://hub.docker.com/search/?isAutomated=0&isOfficial=0&page=1&pullCount=0&q=debian&starCount=0)
+ * Como no le dijimos que versión, bajó `latest` (es lo mismo que haberle puesto `docker run -ti debian:latest bash` [^versions]).
+ * Se creó un  *contenedor* a partir de la imagen de *debian*.
+ * Si iniciamos `docker ps` en otro terminal, veremos detalles sobre el contenedor.
 
-# `Dockerfile`
+[^versions]: Otra versión podría ser `jessie`, `stable`, `oldstable`.
 
-Un dockerfile es la definición
+# Imagenes
+
+* Las imágenes nos permiten iniciar contenedores. Los tamaños suelen ser mucho más pequeños que la máquina virtual equivalente.
+
+```
+$ docker images
+REPOSITORY          TAG                 IMAGE ID
+CREATED             SIZE
+debian              latest              7b0a06c805e8
+2 days ago          123 MB
+```
+
+[^img_dock]: Estás imagenes nos serán de utlidad cuando aprendamos a usar `Dockerfiles`
+
+# Imagenes (cont).
+
+ * Las imágnees puede descargarse con `docker pull` además de ser automáticamente descargads por `docker run`.
+ * Se pueden borrar con `docker rmi nombre` o `docker rmi <IMAGE ID>`.
+ * Existen imagenes de diferentes linux como debian, centos, ubuntu pero también de productos específicos como mysql, httpd (apache) o postgres [^img_dock]
+ * Las imágenes de productos ya conocen el binario que deben ejecutar
+
+# Contenedores
+
+* A diferencia de las VMs, inciar múltiples contenedores no es mayor problema.
+
+![Dos contenedores basados en la imagen de **debian**](images/2_debian_cont.png)
+
+
+# Sistema de archivos
+
+* El sistema de archivos de cada contenedor está basado en su imagen, pero no se comparte, por lo tanto cada contenedor tiene su sistema de archivos independiente.
+* Dos `run` consecutivos a pesar de estar basados en la misma imagen no compartirán archivos.
+
+# Sistema de archivos
+
+```bash
+$ docker run -ti debian bash
+root@9b6cecd04132:/# echo "Prueba" > prueba
+root@9b6cecd04132:/# cat prueba
+Prueba
+root@9b6cecd04132:/# exit
+$ docker run -ti debian bash
+root@31d4e1b3638a:/# cat prueba
+cat: prueba: No such file or directory
+root@31d4e1b3638a:/#
+```
+
+# Volúmenes
+
+## Características
+
+* Los volúmenes permiten compartir sistema de archivos entre el sistema operativo anfitrión y los contenedores.
+* Permiten persistir datos (útil para por ejemplo, correr una DB)
+* Permiten compartir datos entre contenedores
+
+# Volúmenes
+
+## Ejemplo
+
+```bash
+$ mkdir vol    # Carpeta a compartir
+$ docker run -ti -v "$(pwd)/vol:/vol" debian bash
+root@962570a041ad:/# echo "prueba" > /vol/prueba
+root@962570a041ad:/# exit
+$ docker run -ti -v "$(pwd)/vol:/vol" debian bash
+root@d32929d3813d:/# cat /vol/prueba
+prueba
+root@d32929d3813d:/# exit
+$ cat vol/prueba
+prueba
+```
+
+# Puertos
+
+Docker permite exponer puertos que se comparten de manera automática con el host.
+
+* `-P` Publicar todos los puertos definidos en el `Dockerfile` en todas las interfases del host.
+* `-p` Publicar un puerto o rango al host:
+    - `ip:hostPort:containerPort` Ej: `-p 127.0.0.1:8000:80`
+    - `ip::containerPort`
+    - `hostPort:containerPort`
+    - `containerPort`
+* Para probar apache publicandolo en el puerto 8000:
+  `docker run -p 8001:80 -ti httpd`[^nobin]
+
+[^nobin]: Cuando veamos `Dockerfile` veremos por que no es necesario especificar el binario a ejecutar.
+
+# Puertos (cont.)
+
+![Apache ejecutandose en modo interactivo](images/itworks.png)
+
+# Contenedores bajo control
+
+* Los contenedores no se pierden cuando termina su ejecución, podemos ver una lista de lo que hemos ejecutado con `docker ps -a`. Esto se hace por trazabilidad, pero puede evitarse agregando `--rm`.
+* Para borrar contenedores viejos, `docker rm <NOMBRE>` o `docker rm <CONTAINER ID>`.
+* Podemos re-lanzar contenedores viejos utilizando `docker start <NOMBRE>` o `docker start <CONTAINER ID>`.
+* Al momento del `run` podemos dar un nombre a un contenedor con `--name`, evitando que Docker genere uno aleatorio (típicamente conformado por un adjetivo y una personalidad histórica).
+
+
+# Contenedores en Segundo Plano
+
+## Interactivo y Desacoplado
+* Si reemplazamos `-ti` por `-d` en `run`, el contenedor se ejecuta en segundo plano.
+  `docker run -d httpd --name apache`. Solo impimirá el ID.
+* Podemos reclamar la temrinal, utilizando `docker attach`.
+
+## Ejecución en contenedores
+* `docker exec <NOMBRE> <COMANDO>` nos permite conectarnos a un contenedor en ejecución.
+* Si el contenedor no está ej ejecución, podemos inciarlo con `docker start <NOMBRE>`.
+* Sirve para explorar el filesystem y realizar pruebas.
+* Ej: `docker exec apachecito bash`
+
+
+# Reuniendo Todo
+## Crenado un contenedor con nuestro HTML
+
+1. Creamos el contenedor desacoplado
+  `docker run -d --name apache httpd`
+2. Nos conectamos y buscamos la carpeta `htdocs`:
+```
+$ docker exec apache bash
+root@a31d58f35fea:/# find / -name htdocs
+/usr/local/apache2/htdocs
+```
+3. Vamos a recrear el contenedor, primero lo borramos: `docker rm apache`.
+4. Creamos una carpeta con contenido: `mkdir htdocs && echo "Hola mundo" > htdocs/index.html`
+5.
+```
+docker run --name apache   \
+  -v "$(pwd)/htdocs:/usr/local/apache2/htdocs" \
+  -p 8001:80 \
+  httpd
+```
+
+# Creando Imágenes Propias (a.k.a.`Dockerfile`s)
+
+* Un `Dockerfile` es un archivo que define como crear una nueva imagen.
+* Dentro de un `Dockerfile` se definen un conunto de líneas de la forma `<COMADO> <ARGUMENTOS>...`, algunos comandos son:
+
+    - `FROM` imagen base, se suele acompañar de `MAINTAINER`
+    - `ADD` y `COPY` descargar y agregar un archivo a la imagen
+    - `RUN` ejecutar un comando
+    - `EXPOSE` exponer un puerto
+    - `CMD` y `ENTRYPOINT` comando por defecto
+* Una vez conformado el `Dockerfile` se ejecuta `build` dándole un nombre a la imagen producida [^whydot]
+```
+docker build -t <NOMBRE> .
+```
+
+[^whydot]: El . define el directorio actual dónde se buscará el `Dockerfile`
+
+# Ejemplo básico
+
+```docker
+FROM debian:latest
+MAINTAINER <someone@somewhere.net>
+
+RUN apt-get update -qq
+RUN apt-get install build-essentials
+ADD ./src /src
+RUN gcc /src/mi_programa.c -o /bin/mi_programa
+CMD ["/bin/mi_programa"]
+```
+
+
+# Ejemplo de extensión de `Dockerfile`
+
+```docker
+FROM httpd
+MAINTAINER <someone@somewhere.net>
+ADD ./htdocs /usr/local/apache2/htdocs
+```
+
+* Como no definimos `RUN` lo heredamos de la imagen `httpd`,  simplemente ejecutamos `docker build -t mi_apache .`.
+*
+
+
 
 
 # Docker - Contenedores vs Imagenes
