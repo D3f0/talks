@@ -133,8 +133,8 @@ debian              latest              7b0a06c805e8
 # Imagenes (cont).
 
  * Las imágnees puede descargarse con `docker pull` además de ser automáticamente descargads por `docker run`.
- * Se pueden borrar con `docker rmi <NOMBRE>` o `docker rmi <IMAGE ID>`.
- * Existen imagenes de diferentes linux como debian, centos, ubuntu pero también de productos específicos como mysql, httpd (apache) o postgres [^img_dock]
+ * Se pueden borrar con **`docker rmi <NOMBRE>`** o **`docker rmi <IMAGE ID>`**.
+ * Existen imagenes de diferentes linux como **debian**, **centos**, **ubuntu** pero también de productos específicos como **mysql**, **httpd** (apache), **postgres** entre otros [^img_dock].
  * Las imágenes de productos ya conocen el binario que deben ejecutar
 
 # Contenedores
