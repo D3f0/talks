@@ -226,9 +226,7 @@ Docker permite exponer puertos que se comparten de manera automática con el hos
 * Podemos re-lanzar contenedores viejos utilizando **`docker start <NOMBRE>`** o **`docker start <CONTAINER ID>`**.
 * Al momento del **`run`** podemos dar un nombre a un contenedor con **`--name`** [^random_name]
 
-[^random_name]: Así evitando la generación uno aleatorio (Ej: **`crazy_einstein`**
-
-
+[^random_name]: Así evitando la generación uno aleatorio (Ej: **`crazy_einstein`**)
 
 # Gestión de Contenedores (cont)
 
@@ -237,11 +235,11 @@ Docker permite exponer puertos que se comparten de manera automática con el hos
   `docker run -d httpd --name apache`. Solo impimirá el ID.
 * Podemos reclamar la temrinal, utilizando `docker attach`.
 
-## Ejecución en contenedores
+## Ejecución dentro de contenedores
 * `docker exec <NOMBRE> <COMANDO>` nos permite conectarnos a un contenedor en ejecución.
-* Si el contenedor no está ej ejecución, podemos inciarlo con `docker start <NOMBRE>`.
+* Si el contenedor no está ej ejecución, podemos iniciarlo con `docker start <NOMBRE>`.
 * Sirve para explorar el filesystem y realizar pruebas.
-* Ej: `docker exec apachecito bash`
+* Ej: `docker exec apache bash`
 
 # Gestión de Contenedores (cont)
 
