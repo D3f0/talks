@@ -5,11 +5,9 @@ author: Nahuel Defossé
 lang: es-AR
 header-includes:
     - \usepackage[normalem]{ulem}
-    - \usepackage{fancyhdr}
-    - \fancyfoot[CO,CE]{}
-    - \fancyfoot[LE,RO]{}
+    - \setbeamertemplate{navigation symbols}{}
+
 ---
-    <!-- - \pagestyle{fancy} -->
 
 # Indice
 
