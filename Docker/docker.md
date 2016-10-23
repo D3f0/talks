@@ -270,14 +270,14 @@ docker run --name apache   \
 # Creando Imágenes Propias (a.k.a.`Dockerfile`s)
 
 * Un `Dockerfile` es un archivo que define como crear una nueva imagen.
-* Dentro de un `Dockerfile` se definen un conunto de líneas de la forma `<COMADO> <ARGUMENTOS>...`, algunos comandos son:
+* Dentro de un `Dockerfile` se definen un conunto de líneas de la forma `<COMANDO> <ARGUMENTOS>...`, algunos comandos son:
 
-    - `FROM` imagen base, se suele acompañar de `MAINTAINER`
-    - `ADD` y `COPY` descargar y agregar un archivo a la imagen
-    - `RUN` ejecutar un comando
-    - `EXPOSE` exponer un puerto
-    - `CMD` y `ENTRYPOINT` comando por defecto
-    - `USER` y `WORKDIR` definen el usuario y directorio de trabajo por defecto.
+    - **`FROM`** imagen base, se suele acompañar de `MAINTAINER`
+    - **`ADD`** y **`COPY`** descargar y agregar un archivo a la imagen
+    - **`RUN`** ejecutar un comando
+    - **`EXPOSE`** exponer un puerto
+    - **`CMD`** y **`ENTRYPOINT`** comando por defecto
+    - **`USER`** y **`WORKDIR`** definen el usuario y directorio de trabajo por defecto.
     - `VOLUME` para definir directorios persistentes
 * Una vez conformado el `Dockerfile` se ejecuta `build` dándole un nombre a la imagen producida [^whydot]
 ```
