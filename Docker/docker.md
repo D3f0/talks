@@ -171,7 +171,7 @@ root@31d4e1b3638a:/#
     - Permiten persistir datos (si estamos corriendo un software de DB)
     - Permiten compartir código fuente u otros archivos con el anfitrión que deban ser gestionados (repositorios).
     - Permiten compartir datos entre contenedores
-* El comando es `-v rutahost:rutacontenedor`, dónde ambas deben ser absolutas, pero podemos ayudarnos con **`$(pwd)`** para no *sepultar* rutas.
+* El argumento de **`run`** es **`-v rutaHost:rutaContenedor`**, dónde ambas deben ser absolutas, pero podemos ayudarnos con **`$(pwd)`** para no *sepultar* rutas.
 
 # Volúmenes
 
