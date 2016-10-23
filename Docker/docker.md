@@ -309,10 +309,6 @@ docker build -t mi_c .
   - Si le damos un nombre, también nos podemos *"attachar"* y lanzar más comandos.
 
 
-# Estructura
-
-
-![](images/docker_struct.eps)
 
 # Ejemplo de extensión de `Dockerfile`
 
@@ -323,8 +319,11 @@ ADD ./htdocs /usr/local/apache2/htdocs
 ```
 
 * Como no definimos `RUN` lo heredamos de la imagen `httpd`,  simplemente ejecutamos `docker build -t mi_apache .`.
-*
 
+
+# **Big Picture**\texttrademark de Distribución
+
+![Esquema de Distribución de Contenedores](images/docker_struct.eps)
 
 
 
