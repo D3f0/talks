@@ -240,11 +240,11 @@ Docker permite exponer puertos que se comparten de manera automática con el hos
 
 * Al momento de **`run`** o **`start`** podemos dar una política de inicio para nuestro contenedor con **`--restart`**:
 
-  - **`--restart no`**  No reiniciar el contenedor automáticamente cuando termina. Es el default.
-  - **`--restart on-failure`** Reinicia solo si el contenedor termina con una estado distinto de 0.
-  - **`--restart on-failure:3`** Idem anterior, con máximo de 3 reinicios.
-  - **`--restart always`** Siempre reinicia el contenedor independientemente del estado de salida. Se iniciará automáticamente **cuando el servcio docker se arranque**.
-  - **`--restart unless-stopped`** Siempre se reinicia hasta que se para (**`stop`**). Al inicio del servicio docker, tomará el estado anterior.
+    + **`--restart no`**  No reiniciar el contenedor automáticamente cuando termina. Es el default.
+    + **`--restart on-failure`** Reinicia solo si el contenedor termina con una estado distinto de 0.
+    + **`--restart on-failure:3`** Idem anterior, con máximo de 3 reinicios.
+    + **`--restart always`** Siempre reinicia el contenedor independientemente del estado de salida. Se iniciará automáticamente **cuando el servcio docker se arranque**.
+    + **`--restart unless-stopped`** Siempre se reinicia hasta que se para (**`stop`**). Al inicio del servicio docker, tomará el estado anterior.
 
 # Reuniendo Todo
 ## Crenado un contenedor con nuestro HTML
