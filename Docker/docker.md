@@ -146,7 +146,7 @@ debian              latest              7b0a06c805e8
 
 # Sistema de archivos
 
-* El sistema de archivos de cada contenedor está basado en su imagen, pero no se comparte, por lo tanto cada contenedor tiene su sistema de archivos independiente.
+* El sistema de archivos de cada contenedor está basado en su imagen, **pero no se comparte**, por lo tanto cada contenedor tiene su sistema de archivos independiente.
 * Dos `run` consecutivos a pesar de estar basados en la misma imagen no compartirán archivos.
 
 # Sistema de archivos
@@ -167,9 +167,10 @@ root@31d4e1b3638a:/#
 
 ## Características
 
-* Los volúmenes permiten compartir sistema de archivos entre el sistema operativo anfitrión y los contenedores.
-* Permiten persistir datos (útil para por ejemplo, correr una DB)
-* Permiten compartir datos entre contenedores
+* Los **volúmenes** permiten **compartir sistema de archivos**, ésto es útil para:
+    - Permiten persistir datos (si estamos corriendo un software de DB)
+    - Permiten compartir código fuente u otros archivos con el anfitrión que deban ser gestionados (repositorios).
+    - Permiten compartir datos entre contenedores
 
 # Volúmenes
 
