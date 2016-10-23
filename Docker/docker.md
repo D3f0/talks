@@ -260,6 +260,7 @@ docker run --name apache   \
     - `RUN` ejecutar un comando
     - `EXPOSE` exponer un puerto
     - `CMD` y `ENTRYPOINT` comando por defecto
+    - `USER` y `WORKDIR` definen el usuario y directorio de trabajo por defecto.
 * Una vez conformado el `Dockerfile` se ejecuta `build` dándole un nombre a la imagen producida [^whydot]
 ```
 docker build -t <NOMBRE> .
