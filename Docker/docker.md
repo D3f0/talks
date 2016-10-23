@@ -7,9 +7,8 @@ header-includes:
     - \usepackage[normalem]{ulem}
     - \usepackage{fancyhdr}
     - \pagestyle{fancy}
-    - \fancyhead[CO,CE]{This is fancy}
-    - \fancyfoot[CO,CE]{So is this}
-    - \fancyfoot[LE,RO]{\thepage}
+    - \fancyfoot[CO,CE]{}
+    - \fancyfoot[LE,RO]{}
 ---
 
 # Indice
