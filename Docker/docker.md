@@ -209,7 +209,7 @@ Docker permite exponer puertos que se comparten de manera automática con el hos
 
 ![Apache ejecutandose en modo interactivo](images/itworks.png)
 
-# Contenedores bajo control
+# Gestión de Contenedores
 
 * Los contenedores **no se pierden** cuando **termina su ejecución**, podemos ver una lista de lo que hemos ejecutado con **`docker ps -a`**.
 * Si queremos un contenedor transitorio, que limpie sus rastros tras terminar agrgamos a **`run`**  el argumento **`--rm`**.
@@ -220,7 +220,7 @@ Docker permite exponer puertos que se comparten de manera automática con el hos
 [^random_name]: Así evitando la generación uno aleatorio (Ej: **`crazy_einstein`**
 
 
-# Contenedores en Segundo Plano
+# Gestión de Contenedores (cont)
 
 ## Interactivo y Desacoplado
 * Si reemplazamos `-ti` por `-d` en `run`, el contenedor se ejecuta en segundo plano.
@@ -233,6 +233,19 @@ Docker permite exponer puertos que se comparten de manera automática con el hos
 * Sirve para explorar el filesystem y realizar pruebas.
 * Ej: `docker exec apachecito bash`
 
+
+# Gestión de Contenedores (cont)
+
+## Politica de inicio
+
+* Al momento de **`run`** o **`start`** podemos dar una política de inicio para nuestro contenedor con **`--restart`**:
+
+| Policy  | Result |
+|---------+--------|
+|no | Do not automatically restart the container when it exits. This is the default. |
+|on-failure[:max-retries] | Restart only if the container exits with a non-zero exit status. Optionally, limit the number of restart retries the Docker daemon attempts.
+| always  | Always restart the container regardless of the exit status. When you specify always, the Docker daemon will try to restart the container indefinitely. The container will also always start on daemon startup, regardless of the current state of the container. |
+|unless-stopped | Always restart the container regardless of the exit status, but do not start it on daemon startup if the container has been put to a stopped state before. |
 
 # Reuniendo Todo
 ## Crenado un contenedor con nuestro HTML
