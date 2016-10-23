@@ -3,6 +3,8 @@ title: Breve introducción a Docker
 subtitle: Material en [GitHub](https://github.com/D3f0/talks/)
 author: Nahuel Defossé
 lang: es-AR
+header-includes:
+  - \usepackage[normalem]{ulem}
 ---
 
 # Indice
