@@ -62,12 +62,13 @@ Los contenedores permiten a las aplicaciones:
 
 # Docker Machine
 
-Ya sea que estemos utilizando **Docker Toolbox** o utilizando
+Ya sea que estemos utilizando **Docker Toolbox** o cuando necesitemos utilizar un servicio Docker remoto, la gestión de estas máquinas la haremos con docker-machine.
 
 ## Creación de una máquina virtual con `docker-machine`
 
  * `docker-machine create --driver virtualbox vm`
- * `eval $(docker-machine env vm)` o `docker-machine`
+ * `eval $(docker-machine env vm)`
+ * Existen otros comandos como `start`, `stop`, `restart`, `ssh`, etc.
 
 
 # Primer contacto con Docker
@@ -75,16 +76,14 @@ Ya sea que estemos utilizando **Docker Toolbox** o utilizando
 ### Ejecución bash [^*] en una imagen **debian**
 
 ```
-docker run -ti debian bash
+$ docker run -ti debian bash
 Unable to find image debian:latest locally
 latest: Pulling from library/debian
 
 43c265008fae: Pull complete
 Digest: sha256:c1af755d300d0c65bb1194d24bc
 Status: Downloaded newer image for debian:latest
-root@f601df7b7dd9:/# whoami; pwd; ps
-root
-/
+root@f601df7b7dd9:/# ps
   PID TTY          TIME CMD
     1 ?        00:00:00 bash
     8 ?        00:00:00 ps
