@@ -51,27 +51,21 @@ Los contenedores permiten a las aplicaciones:
   `sudo gpasswd -a $(whoami) docker` y volver a iniciar sesión.
 
 
-# Instalación
+# Instalación Windows
 
-## Windows
+## Docker Toolbox
 
-### Docker Toolbox
+![Instalación de Toolbox](images/Docker_Toolbox.png)
 
-* `docker-machine` + Virtualbox + Kitematic
-* **Windows 10** Utilizando docker nativo
-
-### Docker for Windows
+## Docker for Windows
 
   * **Beta** con emulación nativa HyperV (Windows 10)
   * https://docs.docker.com/docker-for-windows/
 
-# Instalación Windows (2)
 
-![Instalación de Toolbox](images/Docker_Toolbox.png)
+# Instalación Mac
 
-# Instalación
-
-## Mac
+Al igual que en Windows, tenemos el **toolbox** y la versión que utiliza el hipervisor del sistema.
 
 ### Docker Toolbox
 
@@ -79,14 +73,12 @@ Los contenedores permiten a las aplicaciones:
 
 ### Docker for Mac
 
- * Beta con emulación nativa de OS X
+ * [Beta con emulación nativa de OS X]() (actualmente 1.12.1)
 
 
-# Windows y Mac
+# Docker Machine
 
-En Linux la ejecución de Docker es nativa, pero en windows,
-necesitamos un soporte que nos provee `docker-machine` en formato de máquina
-virtual.
+Ya sea que estemos utilizando **Docker Toolbox** o utilizando
 
 ## Creación de una máquina virtual con `docker-machine`
 
