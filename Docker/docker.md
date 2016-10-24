@@ -322,30 +322,6 @@ ADD ./htdocs /usr/local/apache2/htdocs
 
 * Como no definimos `RUN` lo heredamos de la imagen `httpd`,  simplemente ejecutamos `docker build -t mi_apache .`.
 
-
-# **Big Picture**\texttrademark de Distribución
-
-![Esquema de Distribución de Contenedores](images/docker_struct.eps)
-
-
-
-# Docker - Contenedores vs Imagenes
-
-## Imagen
-
- * Una *imagen* es la definición del sistema de archivos para un contenedor.
- * Una imagen suele tener un nombre y una etiqueta que identifica su versión.
- * `docker pull busybox` ()
- * `docker images`
-
-## Contenedor
-
- * Es una instancia de ejecución de una imagen.
- * `docker run -ti busybox sh`
- * `docker run -ti ubuntu /bin/bash`
-
-# `Dockerfile`
-
 ## Ejemplo:
 
 ```bash
@@ -358,18 +334,6 @@ RUN chmod +x /home/foo/miscript.py
 CMD ["python2", "/tmp/miscript.py"]
 ```
 
-## Creando la imagen
-
- * `docker build -t miproyecto .`
- * `docker run `
-
-# Filesystem Read Only
-
-## Volumes
- * Los volumenes son la forma de tener persistencia en Docker.
-
-## Commit
- * Permite editar los pasos realizados en una imagen [`doc`]((https://docs.docker.com/engine/reference/commandline/commit/))
 
 
 # Docker Compose
@@ -391,10 +355,8 @@ services:
     image: redis
 ```
 
-#
+<!-- # **Big Picture**\texttrademark de Distribución
 
-## Demo
+![Esquema de Distribución de Contenedores](images/docker_struct.eps)
 
-#
-
-## Gracias
+ -->
