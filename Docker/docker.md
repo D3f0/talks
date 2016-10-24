@@ -68,7 +68,8 @@ Ya sea que estemos utilizando **Docker Toolbox** o cuando necesitemos utilizar u
 
  * `docker-machine create --driver virtualbox vm`
  * `eval $(docker-machine env vm)`
- * Existen otros comandos como `start`, `stop`, `restart`, `ssh`, etc.
+
+ Existen otros comandos como `start`, `stop`, `restart`, `ssh`, etc.
 
 
 # Primer contacto con Docker
