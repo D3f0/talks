@@ -50,31 +50,15 @@ Los contenedores permiten a las aplicaciones:
  * Imporntante agregarse al grupo docker
   `sudo gpasswd -a $(whoami) docker` y volver a iniciar sesión.
 
-
-# Instalación Windows
-
-## Docker Toolbox
-
-![Instalación de Toolbox](images/Docker_Toolbox.png)
-
-## Docker for Windows
-
-  * **Beta** con emulación nativa HyperV (Windows 10)
-  * https://docs.docker.com/docker-for-windows/
-
-
-# Instalación Mac
-
-Al igual que en Windows, tenemos el **toolbox** y la versión que utiliza el hipervisor del sistema.
+# Instalación Windows/Mac
 
 ### Docker Toolbox
 
- * `docker-machine` + Virtualbox + Kitematic
+ * Paquete basado en VM (`docker-machine` + Virtualbox + Kitematic)
 
-### Docker for Mac
+### Docker for Mac/Windows
 
- * [Beta con emulación nativa de OS X]() (actualmente 1.12.1)
-
+ * [Beta con emulación nativa de OS]() (actualmente 1.12.1)
 
 # Docker Machine
 
@@ -86,7 +70,7 @@ Ya sea que estemos utilizando **Docker Toolbox** o utilizando
  * `eval $(docker-machine env vm)` o `docker-machine`
 
 
-# Primer ejecución de un contenedor
+# Primer contacto con Docker
 
 ### Ejecución bash [^*] en una imagen **debian**
 
