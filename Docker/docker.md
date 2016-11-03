@@ -135,10 +135,12 @@ debian              latest              7b0a06c805e8
 * ... a menos que pongamos un `-rm`
 * Los nombres de los contenedores son aleatorios, a menos que utilicemos
   `--name`
-
 ```
 docker run --name apache httpd
 ```
+* Una vez conocido el nombre, podemos usar `docker start` y `docker stop`
+
+
 
 # Sistema de archivos
 
