@@ -133,7 +133,12 @@ debian              latest              7b0a06c805e8
 
 * Cada vez que hacemos `docker run` se crea un nuevo contenedor.
 * ... a menos que pongamos un `-rm`
+* Los nombres de los contenedores son aleatorios, a menos que utilicemos
+  `--name`
 
+```
+docker run --name apache httpd
+```
 
 # Sistema de archivos
 
