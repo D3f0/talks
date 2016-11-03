@@ -6,6 +6,7 @@ lang: es-AR
 header-includes:
     - \usepackage[normalem]{ulem}
     - \setbeamertemplate{navigation symbols}{}
+    - \usepackage[normalem]{ulem}
 
 ---
 
@@ -22,12 +23,14 @@ header-includes:
 # Docker
 
  * Docker es una plataforma para desarrollar, probar y distribuir aplicaciones.
- * Basada en features de linux LXC (o al menos inicialmente)
+ * Basada en features de linux: LXC [^netcontainer]
+    - Una syscall \sout{fork()} loca.
  * Compuesta de herramientas de líneas de comandos y un servicio.
  * Con una plataforma online para distribución de **imágenes** que se puede ejecutar en entornos privados.
  * Base para otras herramientas como **Mesos** o **Kubernets**.
 
 
+[^netcontainer]: [tambén existe para procesos Windows](https://blogs.msdn.microsoft.com/mvpawardprogram/2015/12/15/getting-started-with-net-and-docker/)
 
 # Docker vs Máquinas Virtuales
 
