@@ -129,6 +129,11 @@ debian              latest              7b0a06c805e8
 
 ![Dos contenedores basados en la imagen de **debian**](images/2_debian_cont.png)
 
+# Contenedores
+
+* Cada vez que hacemos `docker run` se crea un nuevo contenedor.
+* ... a menos que pongamos un `-rm`
+
 
 # Sistema de archivos
 
