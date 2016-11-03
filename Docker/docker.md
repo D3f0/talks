@@ -24,7 +24,7 @@ header-includes:
 
  * Docker es una plataforma para desarrollar, probar y distribuir aplicaciones.
  * Basada en features de linux: LXC [^netcontainer]
-    - Una syscall \sout{fork()} loca.
+    - Una híbrido entre \sout{fork()}, chroot y gestion de bridges.
  * Compuesta de herramientas de líneas de comandos y un servicio.
  * Con una plataforma online para distribución de **imágenes** que se puede ejecutar en entornos privados.
  * Base para otras herramientas como **Mesos** o **Kubernets**.
