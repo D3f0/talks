@@ -19,6 +19,16 @@ header-includes:
 * Cómo utilizar más de un contenedor de manera organizada
 * Como hacer un deployment *básico*
 
+# Docker
+
+ * Docker es una plataforma para desarrollar, probar y distribuir aplicaciones.
+ * Basada en features de linux LXC (o al menos inicialmente)
+ * Compuesta de herramientas de líneas de comandos y un servicio.
+ * Con una plataforma online para distribución de **imágenes** que se puede ejecutar en entornos privados.
+ * Base para otras herramientas como **Mesos** o **Kubernets**.
+
+
+
 # Docker vs Máquinas Virtuales
 
 Los contenedores permiten a las aplicaciones:
