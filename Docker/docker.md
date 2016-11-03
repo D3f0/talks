@@ -15,8 +15,9 @@ header-includes:
 * Qué diferencia existe con una máquina virtual.
 * Cómo crear contenedores
 * Cómo comunicar contenedores con el **sistema de archivos** y con la **red** del SO anfitrión.
-*  Cómo crear imágenes de nuestro propio software.
-*  Cómo utilizar más de un contenedor de manera organizada
+* Cómo crear imágenes de nuestro propio software.
+* Cómo utilizar más de un contenedor de manera organizada
+* Como hacer un deployment *básico*
 
 # Docker vs Máquinas Virtuales
 
