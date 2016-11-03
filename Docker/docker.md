@@ -139,7 +139,7 @@ debian              latest              7b0a06c805e8
 
 ---
 
-![]
+![](images/fisa.png)
 
 # Contenedores
 
