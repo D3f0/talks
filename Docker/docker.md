@@ -136,6 +136,11 @@ debian              latest              7b0a06c805e8
  * Existen imagenes de diferentes linux como **debian**, **centos**, **ubuntu** pero también de productos específicos como **mysql**, **httpd** (apache), **postgres** entre otros [^img_dock].
  * Las imágenes de productos ya conocen el binario que deben ejecutar
 
+
+---
+
+![]
+
 # Contenedores
 
 * A diferencia de las VMs, inciar múltiples contenedores no es mayor problema.
