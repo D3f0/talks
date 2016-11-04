@@ -1,6 +1,6 @@
 ---
 title: Introducción mínima a Docker
-subtitle: Material en [http://bit.ly/dockmedo](http://bit.ly/dockmedo)
+subtitle: "[http://bit.ly/dockmedo](http://bit.ly/dockmedo)"
 author: Nahuel Defossé
 lang: es-AR
 header-includes:
