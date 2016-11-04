@@ -206,6 +206,14 @@ $ cat vol/prueba
 prueba
 ```
 
+# Volúmenes
+
+* Indispensables para aplicaciones con persistencia
+* Útiles para desarrollo
+* Ojo con los *runservers* entre hosts de sistemas operativos diferentes, que utilizan notificaciones, podrían no funcionar bien si utilizan métodos *inotify*-ish
+* Existen múltiples drivers
+
+
 # Puertos
 
 Docker permite exponer puertos que se comparten de manera automática con el host.
@@ -328,6 +336,10 @@ docker build -t mi_c .
 ---
 
 ![Los deletes son \sout{writeouts} $\Rightarrow$ no `rm`](images/aufs_delete.jpg)
+
+---
+
+![Pero la historia no termina en AUFS](images/driver-pros-cons.png)
 
 # Ejemplo básico (cont)
 
