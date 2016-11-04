@@ -361,19 +361,22 @@ ADD ./htdocs /usr/local/apache2/htdocs
 
 * Como no definimos `RUN` lo heredamos de la imagen `httpd`,  simplemente ejecutamos `docker build -t mi_apache .`.
 
-## Ejemplo:
+# Ejemplo:
 
 ```bash
 FROM ubuntu:16.04
-RUN apt-get install python2
+ENV DEBIAN_FRONTEND=noninteractive
+RUN apt-get update -qq \
+    && apt-get install python2 \
+    && rm -rf /var/cache/apt/*
 RUN useradd foo
 COPY miscript.py /home/foo/miscript.py
-RUN chown /home/foo/miscript.py
-RUN chmod +x /home/foo/miscript.py
+USER foo
+WORKDIR /home/foo
+RUN chown  miscript.py
+RUN chmod +x miscript.py
 CMD ["python2", "/tmp/miscript.py"]
 ```
-
-
 
 # Docker Compose
 
