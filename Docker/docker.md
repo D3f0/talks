@@ -399,7 +399,12 @@ Crear una configuración de docker compose con los siguientes servicios.
 docker-machine create --driver digitalocean \
   --digitalocean-access-token=fafafa do-docker
 eval $(docker-machine env do-docker)
-```
+docker run -d --name apache --restart always \
+  -p 80:80 httpd
+open http://$(docker-machine ip do-docker)
+``` [^open]
+
+[^open]: `xdg-open` en Linux
 <!-- # **Big Picture**\texttrademark de Distribución
 
 ![Esquema de Distribución de Contenedores](images/docker_struct.eps)
