@@ -405,6 +405,9 @@ open http://$(docker-machine ip do-docker)
 ``` [^open]
 
 [^open]: `xdg-open` en Linux
+
+
+
 <!-- # **Big Picture**\texttrademark de Distribución
 
 ![Esquema de Distribución de Contenedores](images/docker_struct.eps)
