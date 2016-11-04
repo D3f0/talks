@@ -268,6 +268,10 @@ Docker permite exponer puertos que se comparten de manera automática con el hos
     + **`--restart always`** Siempre reinicia el contenedor independientemente del estado de salida. Se iniciará automáticamente **cuando el servcio docker se arranque**.
     + **`--restart unless-stopped`** Siempre se reinicia hasta que se para (**`stop`**). Al inicio del servicio docker, tomará el estado anterior.
 
+---
+
+![Eventos y Estados de un Contenedor](images/event_state.png)
+
 # Ejemplo
 ## Creando un contenedor con httpd (apache)
 
@@ -462,6 +466,10 @@ xdg-open http://$(docker-machine ip do-docker)
 * Intentar basarse en apline que pesa 8MB contra 100M+ de Debian.
 * Apagarle capacidades a los contenedores que no son necesarias y revisar buenas prácticas de seguridad.
 
+
+---
+
+<!-- ![Meme](images/meme1.jpg) -->
 
 # ¿Dónde sigo?
 
