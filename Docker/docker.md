@@ -427,8 +427,12 @@ xdg-open http://$(docker-machine ip do-docker)
 * En Python es conveniente en desarrollo (pero eno en producción):
     * Volumen con código
     * Volumen con virtualenv
-* Los docker-compose.yml se pueden *heredar*
+* Los docker-compose.yml se pueden *heredar* definiciones
+* Los Makefiles están bien, pero pueden convertirse en un anti-patrón con facilidad.
 * Separar los Dockerfiles en carpetas
+* Usar imágenes oficiales en lo posible en vez de `apt/yum`.
+* Intentar basarse en apline que pesa 8MB contra 100M+ de Debian.
+
 
 
 <!-- # **Big Picture**\texttrademark de Distribución
