@@ -432,6 +432,7 @@ xdg-open http://$(docker-machine ip do-docker)
 * Separar los Dockerfiles en carpetas
 * Usar imágenes oficiales en lo posible en vez de `apt/yum`.
 * Intentar basarse en apline que pesa 8MB contra 100M+ de Debian.
+* Apagarle capacidades a los contenedores que no son necesarias y revisar buenas prácticas de seguridad.
 
 
 
