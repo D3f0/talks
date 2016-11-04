@@ -421,6 +421,11 @@ xdg-open http://$(docker-machine ip do-docker)
 
 
 
+# Dónde Seguir
+
+* Docker Compose soporta el comando `scale`
+* Docker Swarm actúa como Proxy entre diferentes proveedores de docker (servicio local, docker machine, etc)
+
 
 
 <!-- # **Big Picture**\texttrademark de Distribución
