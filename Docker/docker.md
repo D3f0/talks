@@ -467,15 +467,13 @@ xdg-open http://$(docker-machine ip do-docker)
 * Apagarle capacidades a los contenedores que no son necesarias y revisar buenas prácticas de seguridad.
 
 
----
-
-<!-- ![Meme](images/meme1.jpg) -->
-
 # ¿Dónde sigo?
 
 * Docker swarm, Kubernets, Mesos, Rancher
 * Selinux para docker
 * *Plug your ...*
+
+
 <!-- # **Big Picture**\texttrademark de Distribución
 
 ![Esquema de Distribución de Contenedores](images/docker_struct.eps)
