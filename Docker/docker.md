@@ -82,9 +82,10 @@ Los contenedores permiten a las aplicaciones:
 
 ![Kitematics](images/kite2.png)
 
----
+# Kitematic Descarga
 
-[Versión actual 11/16: https://github.com/docker/kitematic/releases/tag/v0.12.0](https://github.com/docker/kitematic/releases/tag/v0.12.0)
+
+* [Versión actual 11/16: https://github.com/docker/kitematic/releases/tag/v0.12.0](https://github.com/docker/kitematic/releases/tag/v0.12.0)
 
 # Docker Machine
 
