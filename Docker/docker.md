@@ -323,11 +323,11 @@ docker build -t mi_c .
 
 ---
 
-![](images/aufs_layers.jpg)
+![AUFS unifica directorios como `diff`](images/aufs_layers.jpg)
 
 ---
 
-![](images/aufs_delete.jpg)
+![Los deletes son \sout{writeouts} $\Rightarrow$ no `rm`](images/aufs_delete.jpg)
 
 # Ejemplo básico (cont)
 
