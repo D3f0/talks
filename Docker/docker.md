@@ -446,12 +446,6 @@ xdg-open http://$(docker-machine ip do-docker)
 #### Nota
 `xdg-open` es para Linux, en macOS usar `open` y en windows `start`
 
-# Máximas de Docker
-
-* Contenedores chicos, imágenes base pequeñas y pocas capas
-* En lo posible con un solo serivicio \sout{supervisor}
-* Don't repeat yourself
-
 # Sobre mi experiencia
 
 * En Python es conveniente en desarrollo (pero eno en producción):
@@ -465,7 +459,11 @@ xdg-open http://$(docker-machine ip do-docker)
 * Apagarle capacidades a los contenedores que no son necesarias y revisar buenas prácticas de seguridad.
 
 
+# ¿Dónde sigo?
 
+* Docker swarm, Kubernets, Mesos, Rancher
+* Selinux para docker
+* *Plug your ...*
 <!-- # **Big Picture**\texttrademark de Distribución
 
 ![Esquema de Distribución de Contenedores](images/docker_struct.eps)
