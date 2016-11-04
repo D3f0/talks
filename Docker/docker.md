@@ -421,11 +421,14 @@ xdg-open http://$(docker-machine ip do-docker)
 
 
 
-# Dónde Seguir
+# Sobre mi experiencia
 
-* Docker Compose soporta el comando `scale`
-* Docker Swarm actúa como Proxy entre diferentes proveedores de docker (servicio local, docker machine, etc)
 
+* En Python es conveniente en desarrollo (pero eno en producción):
+    * Volumen con código
+    * Volumen con virtualenv
+* Los docker-compose.yml se pueden *heredar*
+* Separar los Dockerfiles en carpetas
 
 
 <!-- # **Big Picture**\texttrademark de Distribución
