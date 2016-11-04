@@ -399,10 +399,14 @@ services:
 
 # Docker Compose
 
+* Entiende el concepto de *proyecto* [^nameproy]
 * `docker-compose build` construye las imágenes
 * `docker-compose up` lanza los contenedores
 * o simplemente `docker-compose up --build`
 * Muchas veces se recurre a Makefiles, Gruntfiles, fabfiles.py para no utilizar los parametros, pero es importante sabes que sucede.
+
+
+[^nameproy]: Lo utiliza para los `--name`
 
 
 # Docker Compose
