@@ -370,6 +370,36 @@ services:
     image: redis
 ```
 
+# Docker Compose
+
+* `docker-compose build` construye las imágenes
+* `docker-compose up` lanza los contenedores
+* o simplemente `docker-compose up --build`
+* Muchas veces se recurre a Makefiles, Gruntfiles, fabfiles.py para no utilizar los parametros, pero es importante sabes que sucede.
+
+
+# Docker Compose
+
+## Ejercicio Propuesto para el Hogar
+
+Crear una configuración de docker compose con los siguientes servicios.
+
+ * `nginx` servidor frontera
+ * `django/wsgi` aplicacion web
+ * `postgre` base de datos
+ * `rabbitmq`
+ * `jupyter` con acceso a los modelos
+
+
+# Docker Machine
+
+* Crea y gestiona máquinas que corren docker
+* Ejemplo:
+```
+docker-machine create --driver digitalocean \
+  --digitalocean-access-token=fafafa do-docker
+eval $(docker-machine env do-docker)
+```
 <!-- # **Big Picture**\texttrademark de Distribución
 
 ![Esquema de Distribución de Contenedores](images/docker_struct.eps)
