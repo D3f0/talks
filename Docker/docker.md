@@ -76,15 +76,15 @@ Los contenedores permiten a las aplicaciones:
 
 # Kitematic
 
-![Kitematics](images/kite1.png)
+![Kitematic](images/kite1.png)
 
 ---
 
 ![Kitematics](images/kite2.png)
 
+---
 
-
-[Versión actual 11/16](https://github.com/docker/kitematic/releases/tag/v0.12.0)
+[Versión actual 11/16: https://github.com/docker/kitematic/releases/tag/v0.12.0](https://github.com/docker/kitematic/releases/tag/v0.12.0)
 
 # Docker Machine
 
