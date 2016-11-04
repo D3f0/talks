@@ -387,14 +387,23 @@ Crear una configuración de docker compose con los siguientes servicios.
  * `nginx` servidor frontera
  * `django/wsgi` aplicacion web
  * `postgre` base de datos
- * `rabbitmq`
+ * `celery` con `rabbitmq`
  * `jupyter` con acceso a los modelos
 
 
 # Docker Machine
 
 * Crea y gestiona máquinas que corren docker
-* Ejemplo:
+* Tiene varios drivers para gestionar estas máquinas:
+
+  * ssh
+  * AWS
+  * Digital Ocean
+  * Rackspace
+  * Azure
+
+# Ejemplo
+
 ```
 docker-machine create --driver digitalocean \
   --digitalocean-access-token=fafafa do-docker
