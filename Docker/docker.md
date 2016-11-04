@@ -413,10 +413,13 @@ eval $(docker-machine env do-docker)
 docker run -d --name apache --restart always \
   -p 80:80 httpd
 
-open http://$(docker-machine ip do-docker)
-``` [^open]
+xdg-open http://$(docker-machine ip do-docker)
+```
 
-[^open]: `xdg-open` en Linux
+#### Nota
+`xdg-open` es para Linux, en macOS usar `open` y en windows `start`
+
+
 
 
 
