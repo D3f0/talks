@@ -74,6 +74,18 @@ Los contenedores permiten a las aplicaciones:
 
  * [Beta con emulación nativa de OS]() (actualmente 1.12.1)
 
+# Kitematic
+
+![Kitematics](images/kite1.png)
+
+---
+
+![Kitematics](images/kite2.png)
+
+
+
+[Versión actual 11/16](https://github.com/docker/kitematic/releases/tag/v0.12.0)
+
 # Docker Machine
 
 Ya sea que estemos utilizando **Docker Toolbox** o cuando necesitemos utilizar un servicio Docker remoto, la gestión de estas máquinas la haremos con docker-machine.
