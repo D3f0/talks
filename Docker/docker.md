@@ -312,10 +312,22 @@ RUN gcc src/mi_programa.c -o mi_programa
 CMD ["/home/user/mi_programa"]
 ```
 
+# Construcción de la imágen
+
 * Una vez conformado el `Dockerfile` se ejecuta `build` dándole un nombre a la imagen producida [^whydot]
 ```
 docker build -t mi_c .
 ```
+* Docker utiliza por defecto AUFS:
+  - Cada RUN/ADD es una diff en nuestro FS
+
+---
+
+![](images/aufs_layers.jpg)
+
+---
+
+![](images/aufs_delete.jpg)
 
 # Ejemplo básico (cont)
 
@@ -419,10 +431,13 @@ xdg-open http://$(docker-machine ip do-docker)
 #### Nota
 `xdg-open` es para Linux, en macOS usar `open` y en windows `start`
 
+# Máximas de Docker
 
+* Contenedores chicos, imágenes base pequeñas y pocas capas
+* En lo posible con un solo serivicio \sout{supervisor}
+* Don't repeat yourself
 
 # Sobre mi experiencia
-
 
 * En Python es conveniente en desarrollo (pero eno en producción):
     * Volumen con código
