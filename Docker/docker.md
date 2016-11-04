@@ -1,6 +1,6 @@
 ---
-title: Breve introducción a Docker
-subtitle: Material en [GitHub](https://github.com/D3f0/talks/)
+title: Introducción mínima a Docker
+subtitle: Material en [http://bit.ly/dockmedo](http://bit.ly/dockmedo)
 author: Nahuel Defossé
 lang: es-AR
 header-includes:
