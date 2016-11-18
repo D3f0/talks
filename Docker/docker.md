@@ -453,7 +453,6 @@ Crear una configuración de docker compose con los siguientes servicios.
 # Ejemplo
 
 ```bash
-
 docker-machine create --driver digitalocean \
   --digitalocean-access-token=$TOKEN my-machine
 Running pre-create checks...
