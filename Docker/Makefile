@@ -10,12 +10,12 @@ else
     endif
 endif
 
-
+PANDOC_ARGS= -H make-code-scriptsize.tex --highlight-style=espresso
 
 all: open commit_and_push
 
 %.pdf: %.md
-	pandoc -t beamer -s $^ -o $@
+	pandoc -t beamer -s $^ $(PANDOC_ARGS) -o $@
 
 
 open: docker.pdf
@@ -27,3 +27,8 @@ commit_and_push: docker.pdf
 	git commit -m "Update `date`"
 	git push
 	echo $(UPDATE_MSG)
+
+clean:
+	rm docker.pdf
+
+re: clean all
