@@ -10,7 +10,7 @@ else
     endif
 endif
 
-PANDOC_ARGS= -H make-code-scriptsize.tex --highlight-style=espresso
+#PANDOC_ARGS= -H make-code-snippet-footnote-size.tex
 
 all: open commit_and_push
 
